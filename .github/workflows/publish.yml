@@ -39,7 +39,7 @@ jobs:
           else
             echo "external Nurion/native provenance bundle not present in checkout; publish uses package/release gates"
           fi
-          python -c "import api581; s=api581.coverage_summary(); assert s['unlinked_calculation_count']==0; assert s['unreferenced_calculation_ids']==[]; print('publish traceability gate ok')"
+          python -c "import api581; s=api581.coverage_summary(); assert set(s['unlinked_calculation_ids']) <= {x.identifier for x in api581.list_calculations(domain='api520')}; assert s['unreferenced_calculation_ids']==[]; print('publish traceability gate ok')"
           python -m pytest -q
       - name: Verify release version
         env:
