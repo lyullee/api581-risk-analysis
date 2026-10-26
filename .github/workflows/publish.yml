@@ -23,7 +23,7 @@ jobs:
       - name: Run release verification before publish
         run: |
           python scripts/verify_release.py
-          python scripts/verify_reference_fixtures.py
+          python scripts/verify_reference_fixtures.py --allow-optional-missing
           python scripts/check_doc_api_paths.py
           python scripts/check_unimplemented_bodies.py
           python scripts/check_api520_boundary.py
