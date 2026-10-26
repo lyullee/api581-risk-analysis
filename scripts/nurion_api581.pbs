@@ -1,0 +1,38 @@
+#!/bin/bash
+# API-581 integration job for the shared Nurion PBS connection.
+# The submitter supplies the working directory and payload; no credentials are
+# stored here.  The optional-native test is excluded unless native packages are
+# explicitly installed in the submitted environment.
+#PBS -S /bin/bash
+#PBS -N API581_INT
+#PBS -q normal
+# KISTI PBS application name; the user's compute account is selected by the
+# existing Nurion account policy, not by putting na1620 in -A.
+#PBS -A inhouse
+#PBS -r n
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=1
+#PBS -l walltime=02:00:00
+#PBS -j oe
+
+unset BASH_ENV ENV
+set -Eeo pipefail
+cd "${PBS_O_WORKDIR:?}"
+root="$PWD"
+report="$root/nurion-report.json"
+exec >"$root/nurion-job.log" 2>&1
+printf 'API581_NURION_START job=%s host=%s utc=%s\n' "$PBS_JOBID" "$(hostname)" "$(date -u +%FT%TZ)"
+
+source /etc/profile
+module load python/3.12.5
+set -u
+python3 -m pip install --no-index --find-links deps --target vendor \
+  pydantic==2.14.1 pytest==9.1.1 pysqlite3-binary==0.5.4.post2
+export PYTHONPATH="$root/vendor:$root/src"
+python3 -c 'import api581; print("API581_IMPORT_OK", len(api581.list_calculations()))'
+
+python3 scripts/nurion_integration.py \
+  --python python3 \
+  --skip-pytest \
+  --skip-native \
+  --output "$report"
+printf 'API581_NURION_REPORT=%s\n' "$report"

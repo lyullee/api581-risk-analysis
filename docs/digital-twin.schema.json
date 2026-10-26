@@ -1,0 +1,538 @@
+{
+  "TwinMeasurement": {
+    "additionalProperties": false,
+    "properties": {
+      "measurement_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Measurement Id",
+        "type": "string"
+      },
+      "quantity": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Quantity",
+        "type": "string"
+      },
+      "value": {
+        "title": "Value",
+        "type": "number"
+      },
+      "unit": {
+        "maxLength": 50,
+        "minLength": 1,
+        "title": "Unit",
+        "type": "string"
+      },
+      "measured_at": {
+        "format": "date-time",
+        "title": "Measured At",
+        "type": "string"
+      },
+      "source": {
+        "maxLength": 500,
+        "minLength": 1,
+        "title": "Source",
+        "type": "string"
+      },
+      "quality": {
+        "enum": [
+          "measured",
+          "estimated",
+          "simulated"
+        ],
+        "title": "Quality",
+        "type": "string"
+      },
+      "uncertainty": {
+        "anyOf": [
+          {
+            "minimum": 0,
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Uncertainty"
+      }
+    },
+    "required": [
+      "measurement_id",
+      "quantity",
+      "value",
+      "unit",
+      "measured_at",
+      "source",
+      "quality"
+    ],
+    "title": "TwinMeasurement",
+    "type": "object"
+  },
+  "TwinCalculationRequest": {
+    "$defs": {
+      "TwinMeasurement": {
+        "additionalProperties": false,
+        "properties": {
+          "measurement_id": {
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Measurement Id",
+            "type": "string"
+          },
+          "quantity": {
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Quantity",
+            "type": "string"
+          },
+          "value": {
+            "title": "Value",
+            "type": "number"
+          },
+          "unit": {
+            "maxLength": 50,
+            "minLength": 1,
+            "title": "Unit",
+            "type": "string"
+          },
+          "measured_at": {
+            "format": "date-time",
+            "title": "Measured At",
+            "type": "string"
+          },
+          "source": {
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Source",
+            "type": "string"
+          },
+          "quality": {
+            "enum": [
+              "measured",
+              "estimated",
+              "simulated"
+            ],
+            "title": "Quality",
+            "type": "string"
+          },
+          "uncertainty": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Uncertainty"
+          }
+        },
+        "required": [
+          "measurement_id",
+          "quantity",
+          "value",
+          "unit",
+          "measured_at",
+          "source",
+          "quality"
+        ],
+        "title": "TwinMeasurement",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "description": "Immutable calculation request envelope supplied by a twin host.",
+    "properties": {
+      "request_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Request Id",
+        "type": "string"
+      },
+      "calculation_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Calculation Id",
+        "type": "string"
+      },
+      "asset_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Asset Id",
+        "type": "string"
+      },
+      "component_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Component Id",
+        "type": "string"
+      },
+      "observed_at": {
+        "format": "date-time",
+        "title": "Observed At",
+        "type": "string"
+      },
+      "source_revision": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Source Revision",
+        "type": "string"
+      },
+      "correlation_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Correlation Id",
+        "type": "string"
+      },
+      "inputs": {
+        "additionalProperties": true,
+        "title": "Inputs",
+        "type": "object"
+      },
+      "measurements": {
+        "items": {
+          "$ref": "#/$defs/TwinMeasurement"
+        },
+        "maxItems": 10000,
+        "title": "Measurements",
+        "type": "array"
+      },
+      "contract_version": {
+        "const": "api581-twin-1",
+        "default": "api581-twin-1",
+        "title": "Contract Version",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_id",
+      "calculation_id",
+      "asset_id",
+      "component_id",
+      "observed_at",
+      "source_revision",
+      "correlation_id",
+      "inputs"
+    ],
+    "title": "TwinCalculationRequest",
+    "type": "object"
+  },
+  "TwinCalculationResponse": {
+    "$defs": {
+      "ValidationEvidence": {
+        "additionalProperties": false,
+        "description": "Stable JSON shape linking a calculation to its verification record.",
+        "properties": {
+          "manifest": {
+            "title": "Manifest",
+            "type": "string"
+          },
+          "packaged_manifest": {
+            "title": "Packaged Manifest",
+            "type": "string"
+          },
+          "verification_scripts": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Verification Scripts",
+            "type": "array"
+          }
+        },
+        "required": [
+          "manifest",
+          "packaged_manifest",
+          "verification_scripts"
+        ],
+        "title": "ValidationEvidence",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "description": "Reproducible result envelope returned to a twin host.",
+    "properties": {
+      "contract_version": {
+        "const": "api581-twin-1",
+        "default": "api581-twin-1",
+        "title": "Contract Version",
+        "type": "string"
+      },
+      "request_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Request Id",
+        "type": "string"
+      },
+      "run_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Run Id",
+        "type": "string"
+      },
+      "calculation_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Calculation Id",
+        "type": "string"
+      },
+      "asset_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Asset Id",
+        "type": "string"
+      },
+      "component_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Component Id",
+        "type": "string"
+      },
+      "observed_at": {
+        "format": "date-time",
+        "title": "Observed At",
+        "type": "string"
+      },
+      "input_hash": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Input Hash",
+        "type": "string"
+      },
+      "engine_version": {
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Engine Version",
+        "type": "string"
+      },
+      "standard_edition": {
+        "maxLength": 100,
+        "minLength": 1,
+        "title": "Standard Edition",
+        "type": "string"
+      },
+      "code_fingerprint": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Code Fingerprint",
+        "type": "string"
+      },
+      "outputs": {
+        "additionalProperties": true,
+        "title": "Outputs",
+        "type": "object"
+      },
+      "references": {
+        "items": {
+          "type": "string"
+        },
+        "title": "References",
+        "type": "array"
+      },
+      "limitations": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Limitations",
+        "type": "array"
+      },
+      "validation_evidence": {
+        "items": {
+          "$ref": "#/$defs/ValidationEvidence"
+        },
+        "title": "Validation Evidence",
+        "type": "array"
+      },
+      "software_test_modules": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Software Test Modules",
+        "type": "array"
+      },
+      "direct_public_test_modules": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Direct Public Test Modules",
+        "type": "array"
+      },
+      "validation_level": {
+        "default": "software_tested_only",
+        "enum": [
+          "software_tested_only",
+          "native_engine_fixture_verified"
+        ],
+        "title": "Validation Level",
+        "type": "string"
+      },
+      "validation_status": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Validation Status",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_id",
+      "run_id",
+      "calculation_id",
+      "asset_id",
+      "component_id",
+      "observed_at",
+      "input_hash",
+      "engine_version",
+      "standard_edition",
+      "code_fingerprint",
+      "outputs",
+      "references",
+      "limitations",
+      "validation_status"
+    ],
+    "title": "TwinCalculationResponse",
+    "type": "object"
+  },
+  "TwinBatchShard": {
+    "additionalProperties": false,
+    "description": "Deterministic work partition that a host may submit to an HPC queue.",
+    "properties": {
+      "shard_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Shard Id",
+        "type": "string"
+      },
+      "ordinal": {
+        "minimum": 0,
+        "title": "Ordinal",
+        "type": "integer"
+      },
+      "request_ids": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 100000,
+        "minItems": 1,
+        "title": "Request Ids",
+        "type": "array"
+      },
+      "payload_hash": {
+        "maxLength": 64,
+        "minLength": 64,
+        "title": "Payload Hash",
+        "type": "string"
+      }
+    },
+    "required": [
+      "shard_id",
+      "ordinal",
+      "request_ids",
+      "payload_hash"
+    ],
+    "title": "TwinBatchShard",
+    "type": "object"
+  },
+  "TwinBatchPlan": {
+    "$defs": {
+      "TwinBatchShard": {
+        "additionalProperties": false,
+        "description": "Deterministic work partition that a host may submit to an HPC queue.",
+        "properties": {
+          "shard_id": {
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Shard Id",
+            "type": "string"
+          },
+          "ordinal": {
+            "minimum": 0,
+            "title": "Ordinal",
+            "type": "integer"
+          },
+          "request_ids": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 100000,
+            "minItems": 1,
+            "title": "Request Ids",
+            "type": "array"
+          },
+          "payload_hash": {
+            "maxLength": 64,
+            "minLength": 64,
+            "title": "Payload Hash",
+            "type": "string"
+          }
+        },
+        "required": [
+          "shard_id",
+          "ordinal",
+          "request_ids",
+          "payload_hash"
+        ],
+        "title": "TwinBatchShard",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "description": "Scheduler-neutral manifest for replayable digital-twin batches.",
+    "properties": {
+      "contract_version": {
+        "const": "api581-batch-1",
+        "default": "api581-batch-1",
+        "title": "Contract Version",
+        "type": "string"
+      },
+      "batch_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Batch Id",
+        "type": "string"
+      },
+      "request_count": {
+        "minimum": 0,
+        "title": "Request Count",
+        "type": "integer"
+      },
+      "shard_size": {
+        "exclusiveMinimum": 0,
+        "title": "Shard Size",
+        "type": "integer"
+      },
+      "request_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Request Ids",
+        "type": "array"
+      },
+      "shards": {
+        "items": {
+          "$ref": "#/$defs/TwinBatchShard"
+        },
+        "title": "Shards",
+        "type": "array"
+      },
+      "plan_hash": {
+        "maxLength": 64,
+        "minLength": 64,
+        "title": "Plan Hash",
+        "type": "string"
+      }
+    },
+    "required": [
+      "batch_id",
+      "request_count",
+      "shard_size",
+      "request_ids",
+      "shards",
+      "plan_hash"
+    ],
+    "title": "TwinBatchPlan",
+    "type": "object"
+  }
+}

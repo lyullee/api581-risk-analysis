@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "api581-engine"
+version = "0.1.0"
+description = "API RP 581 Risk Analysis Module: composable Python calculations and workflows"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["api-581", "risk-based-inspection", "rbi", "asset-integrity", "process-safety"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.12"
+dependencies = ["pydantic>=2.9,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+source = ["pypdf>=5,<7"]
+flash = ["CoolProp==8.0.0"]
+slabx = ["slabx==1.0.8"]
+slabx-lh2 = ["slabx==1.0.8", "slabx-lh2==0.2.0"]
+hpc-sqlite = ["pysqlite3-binary==0.5.4.post2; platform_system == 'Linux'"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+api581 = ["data/*.json", "py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

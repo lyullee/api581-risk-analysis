@@ -1,0 +1,4278 @@
+{
+  "description": "Direct textual test-module references by calculation ID; not independent certification.",
+  "calculation_count": 509,
+  "calculations": {
+    "frequency/generic": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "frequency/management-factor": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "frequency/adjusted": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "frequency/pof-method-selection": [
+      "tests/test_frequency_method_selection.py",
+      "tests/test_python_api.py"
+    ],
+    "damage/combine": [
+      "tests/test_calculations.py"
+    ],
+    "inspection/equivalent": [
+      "tests/test_additional.py"
+    ],
+    "inspection/effectiveness-summary": [
+      "tests/test_inspection_effectiveness_summary.py",
+      "tests/test_python_api.py"
+    ],
+    "reliability/weibull": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "reliability/weibull-quantile": [
+      "tests/test_calculations.py"
+    ],
+    "reliability/weibull-from-mttf": [
+      "tests/test_additional.py"
+    ],
+    "reliability/poisson-probability": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "release/hole-size-selection": [
+      "tests/test_python_api.py"
+    ],
+    "release/detection-isolation-rating": [
+      "tests/test_python_api.py"
+    ],
+    "release/orifice-area": [
+      "tests/test_additional.py",
+      "tests/test_digital_twin_contract.py",
+      "tests/test_python_api.py"
+    ],
+    "release/viscosity-factor": [
+      "tests/test_additional.py"
+    ],
+    "release/liquid": [
+      "tests/test_calculations.py"
+    ],
+    "release/gas": [
+      "tests/test_calculations.py",
+      "tests/test_catalog.py",
+      "tests/test_level1.py",
+      "tests/test_python_api.py"
+    ],
+    "properties/heat-capacity-ratio": [
+      "tests/test_additional.py"
+    ],
+    "release/available-inventory": [
+      "tests/test_calculations.py"
+    ],
+    "release/type": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "release/magnitude": [
+      "tests/test_calculations.py"
+    ],
+    "release/detection-isolation": [
+      "tests/test_python_api.py"
+    ],
+    "release/integrate-profile": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "properties/mixture-molecular-weight": [
+      "tests/test_additional.py"
+    ],
+    "effects/jet-fire-power": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "effects/jet-fire-flux": [
+      "tests/test_calculations.py"
+    ],
+    "effects/jet-fire-distance": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "effects/flash-fire": [
+      "tests/test_additional.py",
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-fire-area": [
+      "tests/test_additional.py"
+    ],
+    "consequence/power-law-area": [
+      "tests/test_additional.py"
+    ],
+    "events/leakage-tree": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-probit": [
+      "tests/test_additional.py"
+    ],
+    "effects/pool-burning-rate": [
+      "tests/test_additional.py"
+    ],
+    "effects/fireball-geometry": [
+      "tests/test_additional.py"
+    ],
+    "effects/fireball-radiative-fraction": [
+      "tests/test_additional.py"
+    ],
+    "effects/fireball-emissive-power": [
+      "tests/test_additional.py"
+    ],
+    "effects/vce-tnt-equivalence": [
+      "tests/test_additional.py"
+    ],
+    "consequence/expected": [
+      "tests/test_additional.py"
+    ],
+    "risk/aggregate": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "risk/assessment": [
+      "tests/test_calculations.py",
+      "tests/test_python_api.py"
+    ],
+    "risk/assessment-from-damage": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/financial-total": [
+      "tests/test_additional.py"
+    ],
+    "risk/matrix": [
+      "tests/test_additional.py",
+      "tests/test_python_api.py"
+    ],
+    "planning/target-crossing": [
+      "tests/test_calculations.py"
+    ],
+    "damage/thinning-wall-loss": [
+      "tests/test_python_api.py"
+    ],
+    "damage/flow-stress": [
+      "tests/test_additional.py"
+    ],
+    "damage/thinning-strength-ratio": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-prior-selection": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-posterior": [
+      "tests/test_calculations.py"
+    ],
+    "damage/thinning-base": [
+      "tests/test_calculations.py",
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/thinning-adjust": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-unclad": [
+      "tests/test_additional.py"
+    ],
+    "damage/scc-base": [
+      "tests/test_additional.py"
+    ],
+    "damage/caustic-severity": [
+      "tests/test_additional.py"
+    ],
+    "damage/caustic-escalation": [
+      "tests/test_additional.py"
+    ],
+    "damage/lining-adjust": [
+      "tests/test_additional.py"
+    ],
+    "level1/mitigation": [
+      "tests/test_consequences.py"
+    ],
+    "level1/toxic-source": [
+      "tests/test_consequences.py"
+    ],
+    "level1/toxic-duration": [
+      "tests/test_consequences.py"
+    ],
+    "level1/toxic-area": [
+      "tests/test_consequences.py"
+    ],
+    "level1/steam-area": [
+      "tests/test_consequences.py"
+    ],
+    "level1/acid-caustic-area": [
+      "tests/test_consequences.py"
+    ],
+    "consequence/final-area": [
+      "tests/test_consequences.py",
+      "tests/test_python_api.py"
+    ],
+    "consequence/hole-weighted": [
+      "tests/test_consequences.py"
+    ],
+    "financial/surrounding-damage": [
+      "tests/test_consequences.py"
+    ],
+    "financial/production-loss": [
+      "tests/test_consequences.py"
+    ],
+    "financial/injury": [
+      "tests/test_consequences.py"
+    ],
+    "financial/spill-cleanup": [
+      "tests/test_consequences.py"
+    ],
+    "financial/hole-total": [
+      "tests/test_financial_hole.py"
+    ],
+    "level1/hf-h2s-toxic-coefficients": [
+      "tests/test_python_api.py"
+    ],
+    "level1/hf-h2s-toxic-area": [
+      "tests/test_python_api.py"
+    ],
+    "level1/misc-toxic-coefficients": [
+      "tests/test_python_api.py"
+    ],
+    "level1/misc-toxic-area": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-cutoff": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-mitigation": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-component-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-mixture-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-hole-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level1/flammable-coefficients": [
+      "tests/test_level1.py"
+    ],
+    "release/detection-reduction": [
+      "tests/test_level1.py"
+    ],
+    "release/detection-duration": [
+      "tests/test_level1.py"
+    ],
+    "level1/release-phase": [
+      "tests/test_level1.py"
+    ],
+    "level1/energy-efficiency": [
+      "tests/test_level1.py"
+    ],
+    "level1/blending-factors": [
+      "tests/test_level1.py"
+    ],
+    "level1/flammable-area": [
+      "tests/test_level1.py"
+    ],
+    "release/controlled-scenario": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-flammable": [
+      "tests/test_level1.py"
+    ],
+    "level1/release-to-acid": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-steam": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-toxic": [
+      "tests/test_python_api.py"
+    ],
+    "level1/consequence-summary": [
+      "tests/test_consequences.py"
+    ],
+    "financial/repair-table": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/material-factor": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/outage-table": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/component-repair": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/component-outage": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/surrounding-outage": [
+      "tests/test_cost_tables.py"
+    ],
+    "properties/leak-table": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/cleanup-eligibility": [
+      "tests/test_cost_tables.py"
+    ],
+    "financial/level1-consequence": [
+      "tests/test_cost_tables.py"
+    ],
+    "damage/scc-severity": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/hic-monitoring-factor": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/caustic": [
+      "tests/test_python_api.py"
+    ],
+    "damage/amine": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/ssc": [
+      "tests/test_python_api.py"
+    ],
+    "damage/hic-sohic-h2s": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/acscc": [
+      "tests/test_python_api.py"
+    ],
+    "damage/pascc": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/clscc": [
+      "tests/test_python_api.py"
+    ],
+    "damage/hsc-hf": [
+      "tests/test_python_api.py"
+    ],
+    "damage/hic-sohic-hf": [
+      "tests/test_python_api.py"
+    ],
+    "damage/hsc-hf-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/ssc-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/hic-hf-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/hic-h2s-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/clscc-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/wet-h2s-environment": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/acscc-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/pascc-susceptibility": [
+      "tests/test_scc_mechanisms.py"
+    ],
+    "damage/external-base-rate": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/cui-base-rate": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/external-time-weighted-rate": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/external-rate-adjust": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/cui-rate-adjust": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/coating-exposure": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/external-corrosion": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/cui": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/external-clscc-base-susceptibility": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/external-clscc": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/cui-clscc": [
+      "tests/test_external_corrosion.py"
+    ],
+    "damage/fatigue-base": [
+      "tests/test_python_api.py"
+    ],
+    "damage/fatigue-adjustments": [
+      "tests/test_python_api.py"
+    ],
+    "damage/mechanical-fatigue": [
+      "tests/test_python_api.py"
+    ],
+    "properties/hydrogen-partial-pressure": [
+      "tests/test_hydrogen_partial_pressure.py",
+      "tests/test_python_api.py"
+    ],
+    "damage/htha-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/htha-carbon-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-reference-temperature": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-service-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-base": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-fracture": [
+      "tests/test_python_api.py"
+    ],
+    "damage/embrittlement-885f": [
+      "tests/test_python_api.py"
+    ],
+    "damage/sigma-content": [
+      "tests/test_python_api.py"
+    ],
+    "damage/sigma-embrittlement": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-j-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-xbar": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-xbar-shift": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-generation-shift": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-embrittlement": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/weibayes-history": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/condition-update": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/thickness-life": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/estimated-life": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/life-extension": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/consequence": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/risk": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/target-age": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/deferral-decision": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/replacement-optimization": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/material-factor": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/replacement-cost": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/life-extension-factor": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/categories": [
+      "tests/test_python_api.py"
+    ],
+    "prd/default-weibull": [
+      "tests/test_python_api.py"
+    ],
+    "prd/environment-factor": [
+      "tests/test_python_api.py"
+    ],
+    "prd/set-pressure-factor": [
+      "tests/test_python_api.py"
+    ],
+    "prd/overpressure-factor": [
+      "tests/test_python_api.py"
+    ],
+    "prd/demand-rate": [
+      "tests/test_python_api.py"
+    ],
+    "prd/inspection-update": [
+      "tests/test_python_api.py"
+    ],
+    "prd/protected-equipment": [
+      "tests/test_python_api.py"
+    ],
+    "prd/fail-frequency": [
+      "tests/test_python_api.py"
+    ],
+    "prd/base-reliability": [
+      "tests/test_python_api.py"
+    ],
+    "prd/leakage-rates": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/leakage-duration": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/inventory-loss-factor": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/inventory-loss": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/repair-cost": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/production-loss": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/leakage-consequence": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/multiple-device-pressure": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/fail-risk": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/leakage-risk": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/total-risk": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/risk-assessment": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "prd/service-age": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "level1/type1-flammable-area": [
+      "tests/test_python_api.py"
+    ],
+    "level1/type1-flammable-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-type1-flammable": [
+      "tests/test_python_api.py"
+    ],
+    "properties/water-partial-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "effects/atmospheric-transmissivity": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-mixture-burning-rate": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-flame-geometry": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-surface-emissive-power": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-cylinder-view-factor": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-radiation-flux": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-fire-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-fire-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "inspection/effectiveness-category": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/thinning-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/scc-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/external-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/buried-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/prd-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/lining-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/tube-bundle-uncertainty": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "inspection/ast-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py",
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-mass": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-view-factor": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-radiation-flux": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-scaled-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-scaled-overpressure": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-blast-overpressure": [
+      "tests/test_python_api.py"
+    ],
+    "effects/blast-building-probit": [
+      "tests/test_python_api.py"
+    ],
+    "effects/blast-building-pressure-threshold": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-blast-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-blast-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "effects/physical-explosion-tnt": [
+      "tests/test_python_api.py"
+    ],
+    "release/bleve-flashed-amount": [
+      "tests/test_python_api.py"
+    ],
+    "effects/bleve-liquid-tnt": [
+      "tests/test_python_api.py"
+    ],
+    "effects/physical-explosion-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "effects/bleve-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-nfnt-case": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-nfnt-summary": [
+      "tests/test_python_api.py"
+    ],
+    "properties/toxic-impact-table": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-species-probit": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-species-threshold": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-dose-profile": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-toxic-duration": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/toxic-mixture-limit": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-toxic-case": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-toxic-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level2/correlated-jet-pool": [
+      "tests/test_python_api.py"
+    ],
+    "level2/flammable-case": [
+      "tests/test_python_api.py"
+    ],
+    "level2/final-area": [
+      "tests/test_python_api.py"
+    ],
+    "level2/consequence-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level2/scenario-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level2/scenario-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level2/assessment": [
+      "tests/test_python_api.py"
+    ],
+    "properties/pool-surface-interaction": [
+      "tests/test_python_api.py"
+    ],
+    "release/pool-evaporation-regime": [
+      "tests/test_python_api.py"
+    ],
+    "release/boiling-pool-evaporation": [
+      "tests/test_python_api.py"
+    ],
+    "release/boiling-pool-radius": [
+      "tests/test_python_api.py"
+    ],
+    "release/boiling-pool-steady-source": [
+      "tests/test_python_api.py"
+    ],
+    "release/nonboiling-pool-evaporation": [
+      "tests/test_python_api.py"
+    ],
+    "release/nonboiling-pool-steady-source": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-release-phase": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-orifice-rate": [
+      "tests/test_python_api.py"
+    ],
+    "release/kletz-rainout-fraction": [
+      "tests/test_python_api.py"
+    ],
+    "release/rainout-rate-split": [
+      "tests/test_python_api.py"
+    ],
+    "release/jet-liquid-entrainment": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-source-partition": [
+      "tests/test_python_api.py"
+    ],
+    "release/flammable-phase-rates": [
+      "tests/test_python_api.py"
+    ],
+    "events/ambient-ignition": [
+      "tests/test_python_api.py"
+    ],
+    "events/ait-ignition-maximum": [
+      "tests/test_python_api.py"
+    ],
+    "events/probability-temperature": [
+      "tests/test_python_api.py"
+    ],
+    "events/conditional-table": [
+      "tests/test_python_api.py"
+    ],
+    "events/two-phase-probability": [
+      "tests/test_python_api.py"
+    ],
+    "events/single-phase-tree": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "events/single-phase-ignition": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "events/fireball-given-immediate": [
+      "tests/test_python_api.py"
+    ],
+    "events/two-phase-tree": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "events/two-phase-ignition": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "tank/fluid-table": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/soil-table": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/soil-water-conductivity": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/fluid-conductivity": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/seepage-velocity": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/bottom-hole-count": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/bottom-inventory": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/shell-course-inventory": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/shell-flow": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/bottom-flow": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/shell-detection-time": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/bottom-detection-time": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/release-volume": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/environment-cost-table": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/surface-spill-partition": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/groundwater-arrival": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/subsurface-spill-partition": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/shell-environment-cost": [
+      "tests/test_tank_consequence_public.py"
+    ],
+    "tank/bottom-environment-cost": [
+      "tests/test_tank_environment_public.py"
+    ],
+    "tank/bottom-repair-cost": [
+      "tests/test_tank_consequence_public.py"
+    ],
+    "tank/generic-frequency": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/component-outage": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/bottom-financial-consequence": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/shell-financial-consequence": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/bottom-risk-assessment": [
+      "tests/test_tank_composed_public.py",
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/shell-risk-assessment": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/shell-hole-sizes": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/bottom-hole-sizes": [
+      "tests/test_tank_public_primitives.py"
+    ],
+    "tank/shell-source-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-source-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-integrated-assessment": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/diked-pool-consequence": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/shell-level2-case": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/shell-level2-summary": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/shell-integrated-assessment": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "dispersion/native-engine-capabilities": [
+      "tests/test_digital_twin_contract.py",
+      "tests/test_python_api.py"
+    ],
+    "dispersion/native-pool-centreline": [
+      "tests/test_catalog.py",
+      "tests/test_python_api.py"
+    ],
+    "dispersion/native-pool-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/native-pool-flash-fire": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/native-jet-centreline": [
+      "tests/test_catalog.py"
+    ],
+    "dispersion/native-jet-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/threshold-grid-area": [
+      "tests/test_dispersion_grid_public.py"
+    ],
+    "dispersion/partitioned-jet-centreline": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/partitioned-jet-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "consequence/select-toxic-criterion": [
+      "tests/test_python_api.py"
+    ],
+    "dispersion/native-pool-toxic-consequence": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "damage/soil-base-rate-table": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-resistivity-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-temperature-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-cp-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-coating-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-rate-equation": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-corrosion-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "tank/bottom-base-corrosion-rate": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-soil-rate-equation": [
+      "tests/test_catalog.py"
+    ],
+    "tank/bottom-product-rate-equation": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-soil-resistivity-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-pad-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-drainage-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-cp-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-type-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-temperature-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-product-condition-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-steam-coil-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-water-draw-factor": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-corrosion-rate-combine": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-corrosion-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-minimum-thickness": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-wall-parameter": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-inspection-selection": [
+      "tests/test_tank_corrosion_factor_public.py"
+    ],
+    "tank/bottom-thinning-base": [
+      "tests/test_tank_consequence_public.py"
+    ],
+    "tank/bottom-thinning-adjustment-factors": [
+      "tests/test_tank_consequence_public.py"
+    ],
+    "tank/bottom-thinning-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-corrosion-thinning-assessment": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/bottom-corrosion-risk-assessment": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "damage/cladding-remaining-life": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-clad-wall-loss": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-design-strength-ratio": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-clad": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/thinning-unclad-design": [
+      "tests/test_damage_thinning_public_boundaries.py"
+    ],
+    "damage/thinning-monitoring-row": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-monitoring-table-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-online-monitoring-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-injection-point-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-deadleg-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-conditional-adjustment": [
+      "tests/test_damage_thinning_public_boundaries.py"
+    ],
+    "damage/thinning-unclad-qualified": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/thinning-clad-qualified": [
+      "tests/test_damage_thinning_public_boundaries.py"
+    ],
+    "damage/lining-effective-age": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/lining-base-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-condition-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-monitoring-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-governing-thinning": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/cooling-water-rate-factors": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-ph-coefficients": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-stability-indices": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-saturation-ph": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-base-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-temperature-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-velocity-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-rate-equation": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-seawater-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-coupon-pitting-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-fresh-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/cooling-water-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/cooling-water-system-type": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-treatment-bounds": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-other-material-estimate": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-measured-rate": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-rate-selection": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-selected-thinning": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/co2-relative-humidity": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-dew-point": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-temperature-ph-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-ph-estimate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-fugacity": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-reynolds": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-friction-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-shear-stress": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-base-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-glycol-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-rate-adjustment": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-corrosion-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/co2-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "properties/co2-partial-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-reynolds-mass-flow": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-material-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-hydrocarbon-wetting-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-moisture-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-screened-assessment": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-screened-thinning": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/oxidation-screen": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/oxidation-table-row": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/oxidation-rate": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/oxidation-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/oxidation-thinning-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/acid-sour-water-route": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/acid-sour-water-base-rate": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/acid-sour-water-oxygen-factor": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/acid-sour-water-velocity-factor": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/acid-sour-water-rate-equation": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/acid-sour-water-other-material-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/acid-sour-water-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/acid-sour-water-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "properties/h2s-partial-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "damage/alkaline-sour-water-nh4hs-estimate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/alkaline-sour-water-velocity-selection": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/alkaline-sour-water-base-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/alkaline-sour-water-pressure-adjustment": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/alkaline-sour-water-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/alkaline-sour-water-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hcl-ph-from-chloride": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/hcl-chloride-interval-from-ph": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/hcl-ph-rate": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/hcl-alloy-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/hcl-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/hcl-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/sour-water-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hf-concentration-selection": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/hf-carbon-velocity-band": [
+      "tests/test_damage_chemistry_public.py"
+    ],
+    "damage/hf-carbon-rate": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/hf-alloy400-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/hf-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/hf-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-acid-gas-loading": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/amine-loading-selection": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/amine-contaminant-row": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/amine-strength-factor": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/amine-carbon-base-rate": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-stainless-rate": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-corrosion-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/sulfuric-table-axes": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/sulfuric-table-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/sulfuric-thinning-classification": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/sulfuric-corrosion-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/sulfuric-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/h2sh2-table-axes": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/h2sh2-table-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/h2sh2-corrosion-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/h2sh2-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/sulfidic-material-selection": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/sulfidic-table-axes": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/sulfidic-table-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/sulfidic-velocity-factor": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/sulfidic-thinning-classification": [
+      "tests/test_damage_table_public.py"
+    ],
+    "damage/sulfidic-corrosion-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/sulfidic-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "properties/pure-fluid-flash": [
+      "tests/test_catalog.py"
+    ],
+    "release/pure-liquid-flash-partition": [
+      "tests/test_python_api.py"
+    ],
+    "properties/pure-fluid-saturation-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "properties/pure-fluid-saturation-temperature": [
+      "tests/test_python_api.py"
+    ],
+    "dispersion/flashed-boiling-pool-centreline": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/flashed-boiling-pool-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/flashed-boiling-pool-flash-fire": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "risk/area-event-contribution": [
+      "tests/test_python_api.py"
+    ],
+    "risk/flashed-pool-flash-fire-contribution": [
+      "tests/test_catalog.py"
+    ],
+    "damage/groundwater-tks": [
+      "tests/test_damage_selection_public.py"
+    ],
+    "damage/groundwater-rate-classification": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/groundwater-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/groundwater-thinning-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/thinning-rate-selection": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/thinning-selected-mechanisms": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/thinning-assessment-period": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/thinning-inspection-history": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/thinning-history-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/caustic-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/caustic-figure-susceptibility": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/caustic-screened-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/amine-cracking-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/amine-cracking-screened-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/amine-figure-susceptibility": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/amine-figure-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/ssc-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/hic-h2s-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/ssc-qualified-susceptibility": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/ssc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hic-h2s-qualified-susceptibility": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hic-h2s-monitoring-selection": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hic-h2s-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/acscc-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/acscc-water-susceptibility": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/acscc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/pascc-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/pascc-figure-susceptibility": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/pascc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/clscc-screening": [
+      "tests/test_damage_screening_public.py"
+    ],
+    "damage/clscc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "api520/critical-pressure-ratio": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/flow-coefficient-c": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/relieving-pressure": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/gas-critical-area": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/gas-subcritical-area": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/liquid-area": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/liquid-viscosity-factor": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/gas-critical-capacity": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/gas-subcritical-capacity": [
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "api520/liquid-capacity": [
+      "tests/test_api520.py",
+      "tests/test_api520_public_boundaries.py",
+      "tests/test_catalog.py"
+    ],
+    "risk/portfolio": [
+      "tests/test_calculations.py",
+      "tests/test_catalog.py",
+      "tests/test_digital_twin_contract.py",
+      "tests/test_python_api.py"
+    ],
+    "properties/acid-caustic-representative-fluid": [
+      "tests/test_python_api.py"
+    ],
+    "properties/mixture-representative-fluid": [
+      "tests/test_python_api.py"
+    ],
+    "properties/representative-fluid": [
+      "tests/test_python_api.py"
+    ],
+    "damage/measured-corrosion-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-type": [
+      "tests/test_damage_screening_public.py"
+    ]
+  },
+  "direct_public_test_calculations": {
+    "frequency/generic": [],
+    "frequency/management-factor": [
+      "tests/test_python_api.py"
+    ],
+    "frequency/adjusted": [],
+    "frequency/pof-method-selection": [
+      "tests/test_frequency_method_selection.py"
+    ],
+    "damage/combine": [],
+    "inspection/equivalent": [],
+    "inspection/effectiveness-summary": [
+      "tests/test_inspection_effectiveness_summary.py"
+    ],
+    "reliability/weibull": [],
+    "reliability/weibull-quantile": [],
+    "reliability/weibull-from-mttf": [],
+    "reliability/poisson-probability": [
+      "tests/test_python_api.py"
+    ],
+    "release/hole-size-selection": [
+      "tests/test_python_api.py"
+    ],
+    "release/detection-isolation-rating": [
+      "tests/test_python_api.py"
+    ],
+    "release/orifice-area": [],
+    "release/viscosity-factor": [],
+    "release/liquid": [],
+    "release/gas": [
+      "tests/test_python_api.py"
+    ],
+    "properties/heat-capacity-ratio": [],
+    "release/available-inventory": [],
+    "release/type": [],
+    "release/magnitude": [],
+    "release/detection-isolation": [
+      "tests/test_python_api.py"
+    ],
+    "release/integrate-profile": [
+      "tests/test_python_api.py"
+    ],
+    "properties/mixture-molecular-weight": [],
+    "effects/jet-fire-power": [
+      "tests/test_python_api.py"
+    ],
+    "effects/jet-fire-flux": [],
+    "effects/jet-fire-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/flash-fire": [],
+    "effects/pool-fire-area": [],
+    "consequence/power-law-area": [],
+    "events/leakage-tree": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-probit": [],
+    "effects/pool-burning-rate": [],
+    "effects/fireball-geometry": [],
+    "effects/fireball-radiative-fraction": [],
+    "effects/fireball-emissive-power": [],
+    "effects/vce-tnt-equivalence": [],
+    "consequence/expected": [],
+    "risk/aggregate": [
+      "tests/test_python_api.py"
+    ],
+    "risk/assessment": [
+      "tests/test_python_api.py"
+    ],
+    "risk/assessment-from-damage": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/financial-total": [],
+    "risk/matrix": [
+      "tests/test_python_api.py"
+    ],
+    "planning/target-crossing": [],
+    "damage/thinning-wall-loss": [
+      "tests/test_python_api.py"
+    ],
+    "damage/flow-stress": [],
+    "damage/thinning-strength-ratio": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-prior-selection": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-posterior": [],
+    "damage/thinning-base": [],
+    "damage/thinning-adjust": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-unclad": [],
+    "damage/scc-base": [],
+    "damage/caustic-severity": [],
+    "damage/caustic-escalation": [],
+    "damage/lining-adjust": [],
+    "level1/mitigation": [],
+    "level1/toxic-source": [],
+    "level1/toxic-duration": [],
+    "level1/toxic-area": [],
+    "level1/steam-area": [],
+    "level1/acid-caustic-area": [],
+    "consequence/final-area": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/hole-weighted": [],
+    "financial/surrounding-damage": [],
+    "financial/production-loss": [],
+    "financial/injury": [],
+    "financial/spill-cleanup": [],
+    "financial/hole-total": [
+      "tests/test_financial_hole.py"
+    ],
+    "level1/hf-h2s-toxic-coefficients": [
+      "tests/test_python_api.py"
+    ],
+    "level1/hf-h2s-toxic-area": [
+      "tests/test_python_api.py"
+    ],
+    "level1/misc-toxic-coefficients": [
+      "tests/test_python_api.py"
+    ],
+    "level1/misc-toxic-area": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-cutoff": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-mitigation": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-component-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-mixture-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level1/toxic-hole-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level1/flammable-coefficients": [],
+    "release/detection-reduction": [],
+    "release/detection-duration": [],
+    "level1/release-phase": [],
+    "level1/energy-efficiency": [],
+    "level1/blending-factors": [],
+    "level1/flammable-area": [],
+    "release/controlled-scenario": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-flammable": [],
+    "level1/release-to-acid": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-steam": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-toxic": [
+      "tests/test_python_api.py"
+    ],
+    "level1/consequence-summary": [],
+    "financial/repair-table": [],
+    "financial/material-factor": [],
+    "financial/outage-table": [],
+    "financial/component-repair": [],
+    "financial/component-outage": [],
+    "financial/surrounding-outage": [],
+    "properties/leak-table": [],
+    "financial/cleanup-eligibility": [],
+    "financial/level1-consequence": [],
+    "damage/scc-severity": [],
+    "damage/hic-monitoring-factor": [],
+    "damage/caustic": [],
+    "damage/amine": [],
+    "damage/ssc": [],
+    "damage/hic-sohic-h2s": [],
+    "damage/acscc": [],
+    "damage/pascc": [],
+    "damage/clscc": [],
+    "damage/hsc-hf": [],
+    "damage/hic-sohic-hf": [
+      "tests/test_python_api.py"
+    ],
+    "damage/hsc-hf-susceptibility": [],
+    "damage/ssc-susceptibility": [],
+    "damage/hic-hf-susceptibility": [],
+    "damage/hic-h2s-susceptibility": [],
+    "damage/clscc-susceptibility": [],
+    "damage/wet-h2s-environment": [],
+    "damage/acscc-susceptibility": [],
+    "damage/pascc-susceptibility": [],
+    "damage/external-base-rate": [],
+    "damage/cui-base-rate": [],
+    "damage/external-time-weighted-rate": [],
+    "damage/external-rate-adjust": [],
+    "damage/cui-rate-adjust": [],
+    "damage/coating-exposure": [],
+    "damage/external-corrosion": [],
+    "damage/cui": [],
+    "damage/external-clscc-base-susceptibility": [],
+    "damage/external-clscc": [],
+    "damage/cui-clscc": [],
+    "damage/fatigue-base": [
+      "tests/test_python_api.py"
+    ],
+    "damage/fatigue-adjustments": [
+      "tests/test_python_api.py"
+    ],
+    "damage/mechanical-fatigue": [
+      "tests/test_python_api.py"
+    ],
+    "properties/hydrogen-partial-pressure": [
+      "tests/test_hydrogen_partial_pressure.py"
+    ],
+    "damage/htha-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/htha-carbon-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-reference-temperature": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-service-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-base": [
+      "tests/test_python_api.py"
+    ],
+    "damage/brittle-fracture": [
+      "tests/test_python_api.py"
+    ],
+    "damage/embrittlement-885f": [
+      "tests/test_python_api.py"
+    ],
+    "damage/sigma-content": [
+      "tests/test_python_api.py"
+    ],
+    "damage/sigma-embrittlement": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-j-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-xbar": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-xbar-shift": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-generation-shift": [
+      "tests/test_python_api.py"
+    ],
+    "damage/temper-embrittlement": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/weibayes-history": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/condition-update": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/thickness-life": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/estimated-life": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/life-extension": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/consequence": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/risk": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/target-age": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/deferral-decision": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/replacement-optimization": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/material-factor": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/replacement-cost": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/life-extension-factor": [
+      "tests/test_python_api.py"
+    ],
+    "bundle/categories": [
+      "tests/test_python_api.py"
+    ],
+    "prd/default-weibull": [
+      "tests/test_python_api.py"
+    ],
+    "prd/environment-factor": [
+      "tests/test_python_api.py"
+    ],
+    "prd/set-pressure-factor": [
+      "tests/test_python_api.py"
+    ],
+    "prd/overpressure-factor": [
+      "tests/test_python_api.py"
+    ],
+    "prd/demand-rate": [
+      "tests/test_python_api.py"
+    ],
+    "prd/inspection-update": [
+      "tests/test_python_api.py"
+    ],
+    "prd/protected-equipment": [
+      "tests/test_python_api.py"
+    ],
+    "prd/fail-frequency": [
+      "tests/test_python_api.py"
+    ],
+    "prd/base-reliability": [
+      "tests/test_python_api.py"
+    ],
+    "prd/leakage-rates": [],
+    "prd/leakage-duration": [],
+    "prd/inventory-loss-factor": [],
+    "prd/inventory-loss": [],
+    "prd/repair-cost": [],
+    "prd/production-loss": [],
+    "prd/leakage-consequence": [],
+    "prd/multiple-device-pressure": [],
+    "prd/fail-risk": [],
+    "prd/leakage-risk": [],
+    "prd/total-risk": [],
+    "prd/risk-assessment": [],
+    "prd/service-age": [],
+    "level1/type1-flammable-area": [
+      "tests/test_python_api.py"
+    ],
+    "level1/type1-flammable-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level1/release-to-type1-flammable": [
+      "tests/test_python_api.py"
+    ],
+    "properties/water-partial-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "effects/atmospheric-transmissivity": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-mixture-burning-rate": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-flame-geometry": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-surface-emissive-power": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-cylinder-view-factor": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-radiation-flux": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-fire-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/pool-fire-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "inspection/effectiveness-category": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/thinning-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/scc-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/external-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/buried-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/prd-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/lining-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/tube-bundle-uncertainty": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "inspection/ast-effectiveness": [
+      "tests/test_inspection_effectiveness_primitives.py"
+    ],
+    "effects/fireball-mass": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-view-factor": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-radiation-flux": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/fireball-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-scaled-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-scaled-overpressure": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-blast-overpressure": [
+      "tests/test_python_api.py"
+    ],
+    "effects/blast-building-probit": [
+      "tests/test_python_api.py"
+    ],
+    "effects/blast-building-pressure-threshold": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-blast-distance": [
+      "tests/test_python_api.py"
+    ],
+    "effects/vce-blast-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "effects/physical-explosion-tnt": [
+      "tests/test_python_api.py"
+    ],
+    "release/bleve-flashed-amount": [
+      "tests/test_python_api.py"
+    ],
+    "effects/bleve-liquid-tnt": [
+      "tests/test_python_api.py"
+    ],
+    "effects/physical-explosion-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "effects/bleve-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-nfnt-case": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-nfnt-summary": [
+      "tests/test_python_api.py"
+    ],
+    "properties/toxic-impact-table": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-species-probit": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-species-threshold": [
+      "tests/test_python_api.py"
+    ],
+    "effects/toxic-dose-profile": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-toxic-duration": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/toxic-mixture-limit": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-toxic-case": [
+      "tests/test_python_api.py"
+    ],
+    "consequence/level2-toxic-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level2/correlated-jet-pool": [
+      "tests/test_python_api.py"
+    ],
+    "level2/flammable-case": [
+      "tests/test_python_api.py"
+    ],
+    "level2/final-area": [
+      "tests/test_python_api.py"
+    ],
+    "level2/consequence-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level2/scenario-consequence": [
+      "tests/test_python_api.py"
+    ],
+    "level2/scenario-summary": [
+      "tests/test_python_api.py"
+    ],
+    "level2/assessment": [
+      "tests/test_python_api.py"
+    ],
+    "properties/pool-surface-interaction": [
+      "tests/test_python_api.py"
+    ],
+    "release/pool-evaporation-regime": [
+      "tests/test_python_api.py"
+    ],
+    "release/boiling-pool-evaporation": [
+      "tests/test_python_api.py"
+    ],
+    "release/boiling-pool-radius": [
+      "tests/test_python_api.py"
+    ],
+    "release/boiling-pool-steady-source": [
+      "tests/test_python_api.py"
+    ],
+    "release/nonboiling-pool-evaporation": [
+      "tests/test_python_api.py"
+    ],
+    "release/nonboiling-pool-steady-source": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-release-phase": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-orifice-rate": [
+      "tests/test_python_api.py"
+    ],
+    "release/kletz-rainout-fraction": [
+      "tests/test_python_api.py"
+    ],
+    "release/rainout-rate-split": [
+      "tests/test_python_api.py"
+    ],
+    "release/jet-liquid-entrainment": [
+      "tests/test_python_api.py"
+    ],
+    "release/level2-source-partition": [
+      "tests/test_python_api.py"
+    ],
+    "release/flammable-phase-rates": [
+      "tests/test_python_api.py"
+    ],
+    "events/ambient-ignition": [
+      "tests/test_python_api.py"
+    ],
+    "events/ait-ignition-maximum": [
+      "tests/test_python_api.py"
+    ],
+    "events/probability-temperature": [
+      "tests/test_python_api.py"
+    ],
+    "events/conditional-table": [
+      "tests/test_python_api.py"
+    ],
+    "events/two-phase-probability": [
+      "tests/test_python_api.py"
+    ],
+    "events/single-phase-tree": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "events/single-phase-ignition": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "events/fireball-given-immediate": [
+      "tests/test_python_api.py"
+    ],
+    "events/two-phase-tree": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "events/two-phase-ignition": [
+      "tests/test_events_prd_public_primitives.py"
+    ],
+    "tank/fluid-table": [],
+    "tank/soil-table": [],
+    "tank/soil-water-conductivity": [],
+    "tank/fluid-conductivity": [],
+    "tank/seepage-velocity": [],
+    "tank/bottom-hole-count": [],
+    "tank/bottom-inventory": [],
+    "tank/shell-course-inventory": [],
+    "tank/shell-flow": [],
+    "tank/bottom-flow": [],
+    "tank/shell-detection-time": [],
+    "tank/bottom-detection-time": [],
+    "tank/release-volume": [],
+    "tank/environment-cost-table": [],
+    "tank/surface-spill-partition": [],
+    "tank/groundwater-arrival": [],
+    "tank/subsurface-spill-partition": [],
+    "tank/shell-environment-cost": [],
+    "tank/bottom-environment-cost": [
+      "tests/test_tank_environment_public.py"
+    ],
+    "tank/bottom-repair-cost": [],
+    "tank/generic-frequency": [],
+    "tank/component-outage": [],
+    "tank/bottom-financial-consequence": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/shell-financial-consequence": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/bottom-risk-assessment": [
+      "tests/test_tank_composed_public.py",
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/shell-risk-assessment": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/shell-hole-sizes": [],
+    "tank/bottom-hole-sizes": [],
+    "tank/shell-source-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-source-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-integrated-assessment": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "tank/diked-pool-consequence": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/shell-level2-case": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/shell-level2-summary": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/shell-integrated-assessment": [
+      "tests/test_tank_financial_public_boundaries.py"
+    ],
+    "dispersion/native-engine-capabilities": [
+      "tests/test_python_api.py"
+    ],
+    "dispersion/native-pool-centreline": [],
+    "dispersion/native-pool-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/native-pool-flash-fire": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/native-jet-centreline": [],
+    "dispersion/native-jet-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/threshold-grid-area": [
+      "tests/test_dispersion_grid_public.py"
+    ],
+    "dispersion/partitioned-jet-centreline": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/partitioned-jet-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "consequence/select-toxic-criterion": [
+      "tests/test_python_api.py"
+    ],
+    "dispersion/native-pool-toxic-consequence": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "damage/soil-base-rate-table": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-resistivity-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-temperature-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-cp-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-coating-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-rate-equation": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-corrosion-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/soil-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "tank/bottom-base-corrosion-rate": [],
+    "tank/bottom-soil-rate-equation": [],
+    "tank/bottom-product-rate-equation": [],
+    "tank/bottom-soil-resistivity-factor": [],
+    "tank/bottom-pad-factor": [],
+    "tank/bottom-drainage-factor": [],
+    "tank/bottom-cp-factor": [],
+    "tank/bottom-type-factor": [],
+    "tank/bottom-temperature-factor": [],
+    "tank/bottom-product-condition-factor": [],
+    "tank/bottom-steam-coil-factor": [],
+    "tank/bottom-water-draw-factor": [],
+    "tank/bottom-corrosion-rate-combine": [],
+    "tank/bottom-corrosion-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-minimum-thickness": [],
+    "tank/bottom-wall-parameter": [],
+    "tank/bottom-inspection-selection": [],
+    "tank/bottom-thinning-base": [],
+    "tank/bottom-thinning-adjustment-factors": [],
+    "tank/bottom-thinning-assessment": [
+      "tests/test_tank_composed_public.py"
+    ],
+    "tank/bottom-corrosion-thinning-assessment": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "tank/bottom-corrosion-risk-assessment": [
+      "tests/test_tank_remaining_public_boundaries.py"
+    ],
+    "damage/cladding-remaining-life": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-clad-wall-loss": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-design-strength-ratio": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-clad": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/thinning-unclad-design": [
+      "tests/test_damage_thinning_public_boundaries.py"
+    ],
+    "damage/thinning-monitoring-row": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-monitoring-table-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-online-monitoring-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-injection-point-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-deadleg-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-conditional-adjustment": [
+      "tests/test_damage_thinning_public_boundaries.py"
+    ],
+    "damage/thinning-unclad-qualified": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/thinning-clad-qualified": [
+      "tests/test_damage_thinning_public_boundaries.py"
+    ],
+    "damage/lining-effective-age": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/lining-base-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-condition-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-monitoring-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-governing-thinning": [
+      "tests/test_python_api.py"
+    ],
+    "damage/lining-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/cooling-water-rate-factors": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-ph-coefficients": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-stability-indices": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-saturation-ph": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-base-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-temperature-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-velocity-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-rate-equation": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-seawater-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-coupon-pitting-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/cooling-water-fresh-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/cooling-water-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/cooling-water-system-type": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-treatment-bounds": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-other-material-estimate": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-measured-rate": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-rate-selection": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/cooling-water-selected-thinning": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/co2-relative-humidity": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-dew-point": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-temperature-ph-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-ph-estimate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-fugacity": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-reynolds": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-friction-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-shear-stress": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-base-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-glycol-factor": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-rate-adjustment": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-corrosion-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/co2-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "properties/co2-partial-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-reynolds-mass-flow": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-material-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-hydrocarbon-wetting-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-moisture-screen": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-screened-assessment": [
+      "tests/test_python_api.py"
+    ],
+    "damage/co2-screened-thinning": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/oxidation-screen": [],
+    "damage/oxidation-table-row": [],
+    "damage/oxidation-rate": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/oxidation-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/oxidation-thinning-assessment": [
+      "tests/test_damage_composed_public_boundaries.py"
+    ],
+    "damage/acid-sour-water-route": [],
+    "damage/acid-sour-water-base-rate": [],
+    "damage/acid-sour-water-oxygen-factor": [],
+    "damage/acid-sour-water-velocity-factor": [],
+    "damage/acid-sour-water-rate-equation": [],
+    "damage/acid-sour-water-other-material-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/acid-sour-water-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/acid-sour-water-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "properties/h2s-partial-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "damage/alkaline-sour-water-nh4hs-estimate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/alkaline-sour-water-velocity-selection": [],
+    "damage/alkaline-sour-water-base-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/alkaline-sour-water-pressure-adjustment": [],
+    "damage/alkaline-sour-water-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/alkaline-sour-water-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hcl-ph-from-chloride": [],
+    "damage/hcl-chloride-interval-from-ph": [],
+    "damage/hcl-ph-rate": [],
+    "damage/hcl-alloy-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/hcl-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/hcl-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/sour-water-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hf-concentration-selection": [],
+    "damage/hf-carbon-velocity-band": [],
+    "damage/hf-carbon-rate": [],
+    "damage/hf-alloy400-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/hf-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/hf-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-acid-gas-loading": [],
+    "damage/amine-loading-selection": [],
+    "damage/amine-contaminant-row": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/amine-strength-factor": [],
+    "damage/amine-carbon-base-rate": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-stainless-rate": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-corrosion-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/amine-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/sulfuric-table-axes": [],
+    "damage/sulfuric-table-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/sulfuric-thinning-classification": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/sulfuric-corrosion-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/sulfuric-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/h2sh2-table-axes": [],
+    "damage/h2sh2-table-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/h2sh2-corrosion-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/h2sh2-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/sulfidic-material-selection": [],
+    "damage/sulfidic-table-axes": [],
+    "damage/sulfidic-table-rate": [
+      "tests/test_damage_rate_primitives_public.py"
+    ],
+    "damage/sulfidic-velocity-factor": [],
+    "damage/sulfidic-thinning-classification": [],
+    "damage/sulfidic-corrosion-assessment": [
+      "tests/test_damage_mechanism_composed_public.py"
+    ],
+    "damage/sulfidic-thinning-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "properties/pure-fluid-flash": [],
+    "release/pure-liquid-flash-partition": [
+      "tests/test_python_api.py"
+    ],
+    "properties/pure-fluid-saturation-pressure": [
+      "tests/test_python_api.py"
+    ],
+    "properties/pure-fluid-saturation-temperature": [
+      "tests/test_python_api.py"
+    ],
+    "dispersion/flashed-boiling-pool-centreline": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/flashed-boiling-pool-footprint": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "dispersion/flashed-boiling-pool-flash-fire": [
+      "tests/test_dispersion_public_boundaries.py"
+    ],
+    "risk/area-event-contribution": [
+      "tests/test_python_api.py"
+    ],
+    "risk/flashed-pool-flash-fire-contribution": [],
+    "damage/groundwater-tks": [],
+    "damage/groundwater-rate-classification": [],
+    "damage/groundwater-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/groundwater-thinning-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/thinning-rate-selection": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/thinning-selected-mechanisms": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/thinning-assessment-period": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/thinning-inspection-history": [
+      "tests/test_damage_selection_composed_public.py"
+    ],
+    "damage/thinning-history-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/caustic-screening": [],
+    "damage/caustic-figure-susceptibility": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/caustic-screened-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/amine-cracking-screening": [],
+    "damage/amine-cracking-screened-assessment": [
+      "tests/test_damage_screening_assessments_public.py"
+    ],
+    "damage/amine-figure-susceptibility": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/amine-figure-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/ssc-screening": [],
+    "damage/hic-h2s-screening": [],
+    "damage/ssc-qualified-susceptibility": [
+      "tests/test_damage_screening_public_boundaries.py"
+    ],
+    "damage/ssc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hic-h2s-qualified-susceptibility": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hic-h2s-monitoring-selection": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/hic-h2s-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/acscc-screening": [],
+    "damage/acscc-water-susceptibility": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/acscc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/pascc-screening": [],
+    "damage/pascc-figure-susceptibility": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/pascc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "damage/clscc-screening": [],
+    "damage/clscc-qualified-assessment": [
+      "tests/test_damage_scc_qualified_public.py"
+    ],
+    "api520/critical-pressure-ratio": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/flow-coefficient-c": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/relieving-pressure": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/gas-critical-area": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/gas-subcritical-area": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/liquid-area": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/liquid-viscosity-factor": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/gas-critical-capacity": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/gas-subcritical-capacity": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "api520/liquid-capacity": [
+      "tests/test_api520_public_boundaries.py"
+    ],
+    "risk/portfolio": [
+      "tests/test_python_api.py"
+    ],
+    "properties/acid-caustic-representative-fluid": [
+      "tests/test_python_api.py"
+    ],
+    "properties/mixture-representative-fluid": [
+      "tests/test_python_api.py"
+    ],
+    "properties/representative-fluid": [
+      "tests/test_python_api.py"
+    ],
+    "damage/measured-corrosion-rate": [
+      "tests/test_python_api.py"
+    ],
+    "damage/thinning-type": []
+  },
+  "registry_contract_test_calculations": {
+    "frequency/generic": [
+      "tests/test_registry_contract.py"
+    ],
+    "frequency/management-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "frequency/adjusted": [
+      "tests/test_registry_contract.py"
+    ],
+    "frequency/pof-method-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/combine": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/equivalent": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/effectiveness-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "reliability/weibull": [
+      "tests/test_registry_contract.py"
+    ],
+    "reliability/weibull-quantile": [
+      "tests/test_registry_contract.py"
+    ],
+    "reliability/weibull-from-mttf": [
+      "tests/test_registry_contract.py"
+    ],
+    "reliability/poisson-probability": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/hole-size-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/detection-isolation-rating": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/orifice-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/viscosity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/liquid": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/gas": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/heat-capacity-ratio": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/available-inventory": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/type": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/magnitude": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/detection-isolation": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/integrate-profile": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/mixture-molecular-weight": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/jet-fire-power": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/jet-fire-flux": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/jet-fire-distance": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/flash-fire": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-fire-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/power-law-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/leakage-tree": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/toxic-probit": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-burning-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-geometry": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-radiative-fraction": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-emissive-power": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/vce-tnt-equivalence": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/expected": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/aggregate": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/assessment-from-damage": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/financial-total": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/matrix": [
+      "tests/test_registry_contract.py"
+    ],
+    "planning/target-crossing": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-wall-loss": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/flow-stress": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-strength-ratio": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-prior-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-posterior": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-base": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-adjust": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-unclad": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/scc-base": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/caustic-severity": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/caustic-escalation": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-adjust": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/mitigation": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-source": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-duration": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/steam-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/acid-caustic-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/final-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/hole-weighted": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/surrounding-damage": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/production-loss": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/injury": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/spill-cleanup": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/hole-total": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/hf-h2s-toxic-coefficients": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/hf-h2s-toxic-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/misc-toxic-coefficients": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/misc-toxic-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-cutoff": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-mitigation": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-component-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-mixture-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/toxic-hole-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/flammable-coefficients": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/detection-reduction": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/detection-duration": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/release-phase": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/energy-efficiency": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/blending-factors": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/flammable-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/controlled-scenario": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/release-to-flammable": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/release-to-acid": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/release-to-steam": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/release-to-toxic": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/consequence-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/repair-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/material-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/outage-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/component-repair": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/component-outage": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/surrounding-outage": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/leak-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/cleanup-eligibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "financial/level1-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/scc-severity": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-monitoring-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/caustic": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/ssc": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-sohic-h2s": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acscc": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/pascc": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/clscc": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hsc-hf": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-sohic-hf": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hsc-hf-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/ssc-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-hf-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-h2s-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/clscc-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/wet-h2s-environment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acscc-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/pascc-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/external-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cui-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/external-time-weighted-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/external-rate-adjust": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cui-rate-adjust": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/coating-exposure": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/external-corrosion": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cui": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/external-clscc-base-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/external-clscc": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cui-clscc": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/fatigue-base": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/fatigue-adjustments": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/mechanical-fatigue": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/hydrogen-partial-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/htha-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/htha-carbon-screen": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/brittle-reference-temperature": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/brittle-service-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/brittle-base": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/brittle-fracture": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/embrittlement-885f": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sigma-content": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sigma-embrittlement": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/temper-j-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/temper-xbar": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/temper-xbar-shift": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/temper-generation-shift": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/temper-embrittlement": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/weibayes-history": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/condition-update": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/thickness-life": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/estimated-life": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/life-extension": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/risk": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/target-age": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/deferral-decision": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/replacement-optimization": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/material-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/replacement-cost": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/life-extension-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "bundle/categories": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/default-weibull": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/environment-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/set-pressure-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/overpressure-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/demand-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/inspection-update": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/protected-equipment": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/fail-frequency": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/base-reliability": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/leakage-rates": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/leakage-duration": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/inventory-loss-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/inventory-loss": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/repair-cost": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/production-loss": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/leakage-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/multiple-device-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/fail-risk": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/leakage-risk": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/total-risk": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/risk-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "prd/service-age": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/type1-flammable-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/type1-flammable-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "level1/release-to-type1-flammable": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/water-partial-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/atmospheric-transmissivity": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-mixture-burning-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-flame-geometry": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-surface-emissive-power": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-cylinder-view-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-radiation-flux": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-fire-distance": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/pool-fire-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/effectiveness-category": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/thinning-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/scc-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/external-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/buried-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/prd-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/lining-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/tube-bundle-uncertainty": [
+      "tests/test_registry_contract.py"
+    ],
+    "inspection/ast-effectiveness": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-mass": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-view-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-radiation-flux": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-distance": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/fireball-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/vce-scaled-distance": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/vce-scaled-overpressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/vce-blast-overpressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/blast-building-probit": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/blast-building-pressure-threshold": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/vce-blast-distance": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/vce-blast-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/physical-explosion-tnt": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/bleve-flashed-amount": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/bleve-liquid-tnt": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/physical-explosion-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/bleve-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/level2-nfnt-case": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/level2-nfnt-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/toxic-impact-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/toxic-species-probit": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/toxic-species-threshold": [
+      "tests/test_registry_contract.py"
+    ],
+    "effects/toxic-dose-profile": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/level2-toxic-duration": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/toxic-mixture-limit": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/level2-toxic-case": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/level2-toxic-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/correlated-jet-pool": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/flammable-case": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/final-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/consequence-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/scenario-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/scenario-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "level2/assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/pool-surface-interaction": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/pool-evaporation-regime": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/boiling-pool-evaporation": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/boiling-pool-radius": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/boiling-pool-steady-source": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/nonboiling-pool-evaporation": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/nonboiling-pool-steady-source": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/level2-release-phase": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/level2-orifice-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/kletz-rainout-fraction": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/rainout-rate-split": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/jet-liquid-entrainment": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/level2-source-partition": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/flammable-phase-rates": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/ambient-ignition": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/ait-ignition-maximum": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/probability-temperature": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/conditional-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/two-phase-probability": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/single-phase-tree": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/single-phase-ignition": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/fireball-given-immediate": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/two-phase-tree": [
+      "tests/test_registry_contract.py"
+    ],
+    "events/two-phase-ignition": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/fluid-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/soil-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/soil-water-conductivity": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/fluid-conductivity": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/seepage-velocity": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-hole-count": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-inventory": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-course-inventory": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-flow": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-flow": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-detection-time": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-detection-time": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/release-volume": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/environment-cost-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/surface-spill-partition": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/groundwater-arrival": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/subsurface-spill-partition": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-environment-cost": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-environment-cost": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-repair-cost": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/generic-frequency": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/component-outage": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-financial-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-financial-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-risk-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-risk-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-hole-sizes": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-hole-sizes": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-source-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-source-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-integrated-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/diked-pool-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-level2-case": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-level2-summary": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/shell-integrated-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-engine-capabilities": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-pool-centreline": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-pool-footprint": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-pool-flash-fire": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-jet-centreline": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-jet-footprint": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/threshold-grid-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/partitioned-jet-centreline": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/partitioned-jet-footprint": [
+      "tests/test_registry_contract.py"
+    ],
+    "consequence/select-toxic-criterion": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/native-pool-toxic-consequence": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-base-rate-table": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-resistivity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-temperature-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-cp-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-coating-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-rate-equation": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-corrosion-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/soil-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-base-corrosion-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-soil-rate-equation": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-product-rate-equation": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-soil-resistivity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-pad-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-drainage-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-cp-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-type-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-temperature-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-product-condition-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-steam-coil-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-water-draw-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-corrosion-rate-combine": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-corrosion-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-minimum-thickness": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-wall-parameter": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-inspection-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-thinning-base": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-thinning-adjustment-factors": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-corrosion-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "tank/bottom-corrosion-risk-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cladding-remaining-life": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-clad-wall-loss": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-design-strength-ratio": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-clad": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-unclad-design": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-monitoring-row": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-monitoring-table-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-online-monitoring-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-injection-point-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-deadleg-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-conditional-adjustment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-unclad-qualified": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-clad-qualified": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-effective-age": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-base-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-condition-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-monitoring-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-governing-thinning": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/lining-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-rate-factors": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-ph-coefficients": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-stability-indices": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-saturation-ph": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-temperature-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-velocity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-rate-equation": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-seawater-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-coupon-pitting-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-fresh-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-system-type": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-treatment-bounds": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-other-material-estimate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-measured-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-rate-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/cooling-water-selected-thinning": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-relative-humidity": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-dew-point": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-temperature-ph-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-ph-estimate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-fugacity": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-reynolds": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-friction-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-shear-stress": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-glycol-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-rate-adjustment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-corrosion-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/co2-partial-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-reynolds-mass-flow": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-material-screen": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-hydrocarbon-wetting-screen": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-moisture-screen": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-screened-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/co2-screened-thinning": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/oxidation-screen": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/oxidation-table-row": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/oxidation-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/oxidation-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/oxidation-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-route": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-oxygen-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-velocity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-rate-equation": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-other-material-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acid-sour-water-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/h2s-partial-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/alkaline-sour-water-nh4hs-estimate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/alkaline-sour-water-velocity-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/alkaline-sour-water-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/alkaline-sour-water-pressure-adjustment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/alkaline-sour-water-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/alkaline-sour-water-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hcl-ph-from-chloride": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hcl-chloride-interval-from-ph": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hcl-ph-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hcl-alloy-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hcl-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hcl-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sour-water-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hf-concentration-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hf-carbon-velocity-band": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hf-carbon-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hf-alloy400-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hf-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hf-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-acid-gas-loading": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-loading-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-contaminant-row": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-strength-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-carbon-base-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-stainless-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-corrosion-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfuric-table-axes": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfuric-table-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfuric-thinning-classification": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfuric-corrosion-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfuric-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/h2sh2-table-axes": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/h2sh2-table-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/h2sh2-corrosion-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/h2sh2-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-material-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-table-axes": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-table-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-velocity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-thinning-classification": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-corrosion-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/sulfidic-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/pure-fluid-flash": [
+      "tests/test_registry_contract.py"
+    ],
+    "release/pure-liquid-flash-partition": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/pure-fluid-saturation-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/pure-fluid-saturation-temperature": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/flashed-boiling-pool-centreline": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/flashed-boiling-pool-footprint": [
+      "tests/test_registry_contract.py"
+    ],
+    "dispersion/flashed-boiling-pool-flash-fire": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/area-event-contribution": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/flashed-pool-flash-fire-contribution": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/groundwater-tks": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/groundwater-rate-classification": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/groundwater-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/groundwater-thinning-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-rate-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-selected-mechanisms": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-assessment-period": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-inspection-history": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-history-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/caustic-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/caustic-figure-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/caustic-screened-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-cracking-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-cracking-screened-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-figure-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/amine-figure-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/ssc-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-h2s-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/ssc-qualified-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/ssc-qualified-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-h2s-qualified-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-h2s-monitoring-selection": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/hic-h2s-qualified-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acscc-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acscc-water-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/acscc-qualified-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/pascc-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/pascc-figure-susceptibility": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/pascc-qualified-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/clscc-screening": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/clscc-qualified-assessment": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/critical-pressure-ratio": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/flow-coefficient-c": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/relieving-pressure": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/gas-critical-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/gas-subcritical-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/liquid-area": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/liquid-viscosity-factor": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/gas-critical-capacity": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/gas-subcritical-capacity": [
+      "tests/test_registry_contract.py"
+    ],
+    "api520/liquid-capacity": [
+      "tests/test_registry_contract.py"
+    ],
+    "risk/portfolio": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/acid-caustic-representative-fluid": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/mixture-representative-fluid": [
+      "tests/test_registry_contract.py"
+    ],
+    "properties/representative-fluid": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/measured-corrosion-rate": [
+      "tests/test_registry_contract.py"
+    ],
+    "damage/thinning-type": [
+      "tests/test_registry_contract.py"
+    ]
+  }
+}

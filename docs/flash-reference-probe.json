@@ -1,0 +1,28 @@
+{
+  "scope": "Pure-fluid reference experiment only; not an API581 public implementation or mixture/LH2 validation",
+  "source": "API5812016 Part3 \u00a75.1.3 and STEP1.3,PDF539-541",
+  "engine": "CoolProp",
+  "version": "8.0.0",
+  "fluid": "Propane",
+  "storage_pressure_pa_abs": 1000000.0,
+  "storage_temperature_k": 300.0,
+  "ambient_pressure_pa_abs": 101325.0,
+  "cases": [
+    {
+      "method": "isentropic",
+      "conserved_property": "Smass",
+      "conserved_value_si": 1241.2086054889692,
+      "flashed_temperature_k": 231.0362146443222,
+      "vapor_mass_fraction": 0.34426146819171444,
+      "flashed_phase": "twophase"
+    },
+    {
+      "method": "isenthalpic",
+      "conserved_property": "Hmass",
+      "conserved_value_si": 270153.80139510887,
+      "flashed_temperature_k": 231.0362146443222,
+      "vapor_mass_fraction": 0.398968185444062,
+      "flashed_phase": "twophase"
+    }
+  ]
+}

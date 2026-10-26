@@ -1,0 +1,1083 @@
+{
+  "report": "api581-supporting-text-data-review-v1",
+  "generated_at": "2026-10-26T04:18:30.436586+00:00",
+  "source_report": "src/api581/data/supporting-text-review.json",
+  "source_report_sha256": "97789610e18cf43d9dac3a42b8ca00697e8995c98fe6a5413d7db6b54b35dc07",
+  "method": "local source-locator, metadata-target and disposition consistency review",
+  "public_data_sources": [
+    "https://www.trinity-bridge.com/knowledge-center/publications/api-rp-581-risk-based-inspection-technology-%E2%80%93-demonstrating-technology",
+    "https://trinity-bridge.com/sites/default/files/publications/API%20581%20Example%2C%202nd%20Edition.pdf"
+  ],
+  "scope_note": "Public-data review is software evidence; external evaluation is explicitly out of project scope.",
+  "summary": {
+    "total": 76,
+    "machine_reviewed": 66,
+    "public_data_reviewed": 10
+  },
+  "clauses": [
+    {
+      "clause_id": "Part 1 §2",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "4",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 1 §2.1",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "4",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 1 §2.2",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "4",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 1 §3",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "5",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 1 §3.1",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "5",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 1 §3.2",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "12",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 1 §4.5",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 9,
+        "printed_page_in_part": "24",
+        "extracted_page_text_sha256": "ef56e158141bb30a3ac4b3dbb9f220cfe18847a619879578299a62ad553477a5",
+        "extracted_page_text_bytes": 6382
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 1 §7.1.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 11,
+        "printed_page_in_part": "34",
+        "extracted_page_text_sha256": "0c9b2acc09e75f41e3969cfa30d26e0fe600ce85ab9929fbedb47c94a523dc99",
+        "extracted_page_text_bytes": 6954
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 1 §8.1.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 12,
+        "printed_page_in_part": "83",
+        "extracted_page_text_sha256": "201ccf1904739d6078c85e860ed2aa2fbc9f761d01c43d9c121ac1f03f718138",
+        "extracted_page_text_bytes": 4704
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 1 §8.8",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 12,
+        "printed_page_in_part": "97",
+        "extracted_page_text_sha256": "201ccf1904739d6078c85e860ed2aa2fbc9f761d01c43d9c121ac1f03f718138",
+        "extracted_page_text_bytes": 4704
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 2 §2",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §2.1",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §2.2",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §3.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "7",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §4.6",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "18",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §5.6",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 131,
+        "printed_page_in_part": "29",
+        "extracted_page_text_sha256": "c48e59bd9f97b0df763a47ea915b9e3647c1323544ff7b24264cfc1e7e5c25aa",
+        "extracted_page_text_bytes": 6649
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §6.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 132,
+        "printed_page_in_part": "35",
+        "extracted_page_text_sha256": "a5ae52e45e40ed815513dcfbe70645ca9f8cc190e2d40b9f108d13cda47a2d68",
+        "extracted_page_text_bytes": 6884
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §6.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 132,
+        "printed_page_in_part": "36",
+        "extracted_page_text_sha256": "a5ae52e45e40ed815513dcfbe70645ca9f8cc190e2d40b9f108d13cda47a2d68",
+        "extracted_page_text_bytes": 6884
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §7.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 132,
+        "printed_page_in_part": "43",
+        "extracted_page_text_sha256": "a5ae52e45e40ed815513dcfbe70645ca9f8cc190e2d40b9f108d13cda47a2d68",
+        "extracted_page_text_bytes": 6884
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §8.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 132,
+        "printed_page_in_part": "47",
+        "extracted_page_text_sha256": "a5ae52e45e40ed815513dcfbe70645ca9f8cc190e2d40b9f108d13cda47a2d68",
+        "extracted_page_text_bytes": 6884
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §8.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 132,
+        "printed_page_in_part": "48",
+        "extracted_page_text_sha256": "a5ae52e45e40ed815513dcfbe70645ca9f8cc190e2d40b9f108d13cda47a2d68",
+        "extracted_page_text_bytes": 6884
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §9.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 133,
+        "printed_page_in_part": "53",
+        "extracted_page_text_sha256": "564fb36064750a1b146369c45dc6179ce50a1c00260e9fc67cdfe14e6bb17bed",
+        "extracted_page_text_bytes": 6944
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §9.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 133,
+        "printed_page_in_part": "53",
+        "extracted_page_text_sha256": "564fb36064750a1b146369c45dc6179ce50a1c00260e9fc67cdfe14e6bb17bed",
+        "extracted_page_text_bytes": 6944
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §10.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 133,
+        "printed_page_in_part": "59",
+        "extracted_page_text_sha256": "564fb36064750a1b146369c45dc6179ce50a1c00260e9fc67cdfe14e6bb17bed",
+        "extracted_page_text_bytes": 6944
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §10.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 133,
+        "printed_page_in_part": "59",
+        "extracted_page_text_sha256": "564fb36064750a1b146369c45dc6179ce50a1c00260e9fc67cdfe14e6bb17bed",
+        "extracted_page_text_bytes": 6944
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §11.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 133,
+        "printed_page_in_part": "64",
+        "extracted_page_text_sha256": "564fb36064750a1b146369c45dc6179ce50a1c00260e9fc67cdfe14e6bb17bed",
+        "extracted_page_text_bytes": 6944
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §11.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 133,
+        "printed_page_in_part": "64",
+        "extracted_page_text_sha256": "564fb36064750a1b146369c45dc6179ce50a1c00260e9fc67cdfe14e6bb17bed",
+        "extracted_page_text_bytes": 6944
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §12.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 134,
+        "printed_page_in_part": "71",
+        "extracted_page_text_sha256": "6cb41e422de8d4d7c4cd39746c8a4ac1878704b9ea16a32decd84b9b8eed1003",
+        "extracted_page_text_bytes": 6886
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §13.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 134,
+        "printed_page_in_part": "76",
+        "extracted_page_text_sha256": "6cb41e422de8d4d7c4cd39746c8a4ac1878704b9ea16a32decd84b9b8eed1003",
+        "extracted_page_text_bytes": 6886
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §13.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 134,
+        "printed_page_in_part": "77",
+        "extracted_page_text_sha256": "6cb41e422de8d4d7c4cd39746c8a4ac1878704b9ea16a32decd84b9b8eed1003",
+        "extracted_page_text_bytes": 6886
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §14.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 134,
+        "printed_page_in_part": "81",
+        "extracted_page_text_sha256": "6cb41e422de8d4d7c4cd39746c8a4ac1878704b9ea16a32decd84b9b8eed1003",
+        "extracted_page_text_bytes": 6886
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §14.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 134,
+        "printed_page_in_part": "81",
+        "extracted_page_text_sha256": "6cb41e422de8d4d7c4cd39746c8a4ac1878704b9ea16a32decd84b9b8eed1003",
+        "extracted_page_text_bytes": 6886
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 §16.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 135,
+        "printed_page_in_part": "100",
+        "extracted_page_text_sha256": "366ce6c7af96cb7300df4ba48a49a50f601016c42cfcf17d984cd1181ea169f8",
+        "extracted_page_text_bytes": 6790
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §17.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 135,
+        "printed_page_in_part": "110",
+        "extracted_page_text_sha256": "366ce6c7af96cb7300df4ba48a49a50f601016c42cfcf17d984cd1181ea169f8",
+        "extracted_page_text_bytes": 6790
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §18.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 135,
+        "printed_page_in_part": "115",
+        "extracted_page_text_sha256": "366ce6c7af96cb7300df4ba48a49a50f601016c42cfcf17d984cd1181ea169f8",
+        "extracted_page_text_bytes": 6790
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 §18.8",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 135,
+        "printed_page_in_part": "115",
+        "extracted_page_text_sha256": "366ce6c7af96cb7300df4ba48a49a50f601016c42cfcf17d984cd1181ea169f8",
+        "extracted_page_text_bytes": 6790
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §2.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "4",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §2.4",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "4",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §3.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "11",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §3.4",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "12",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §4.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "33",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §4.4",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "33",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §5.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "43",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §5.4",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "44",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §6.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "54",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §6.4",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 317,
+        "printed_page_in_part": "55",
+        "extracted_page_text_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+        "extracted_page_text_bytes": 6500
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §8.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "61",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §8.4",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "63",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §9.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "69",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §10.1.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "72",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 2 Annex B §10.4",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "73",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 Annex B §10.5",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "73",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §11.1.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "77",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 2 Annex B §11.4",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "86",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 Annex B §11.5",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 318,
+        "printed_page_in_part": "86",
+        "extracted_page_text_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+        "extracted_page_text_bytes": 6755
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §12.1.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "95",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 2 Annex B §12.2",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "96",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §12.5",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "99",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 Annex B §12.6",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "99",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 2 Annex B §13.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "103",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §13.4",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "106",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 2 Annex B §14.1",
+      "classification": "engineering_damage_review",
+      "status": "public_data_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "110",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "damage screening/assessment APIs plus public worked-example data",
+      "next_action": "Compare mechanism description with screening and assessment coverage; unsupported mechanisms require explicit engineering disposition."
+    },
+    {
+      "clause_id": "Part 2 Annex B §14.4",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 319,
+        "printed_page_in_part": "112",
+        "extracted_page_text_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+        "extracted_page_text_bytes": 6566
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 3 §1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 469,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "22697cb194a7948601a23100c65364780bc9780ceb8264dc529a9c33c2e62555",
+        "extracted_page_text_bytes": 6391
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 3 §2",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 469,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "22697cb194a7948601a23100c65364780bc9780ceb8264dc529a9c33c2e62555",
+        "extracted_page_text_bytes": 6391
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 3 §2.1",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 469,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "22697cb194a7948601a23100c65364780bc9780ceb8264dc529a9c33c2e62555",
+        "extracted_page_text_bytes": 6391
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 3 §2.2",
+      "classification": "metadata_reference_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 469,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "22697cb194a7948601a23100c65364780bc9780ceb8264dc529a9c33c2e62555",
+        "extracted_page_text_bytes": 6391
+      },
+      "evidence_target": "standard-metadata.references",
+      "next_action": "Map cited edition and normative/informative role; do not create a calculation API from a reference heading."
+    },
+    {
+      "clause_id": "Part 3 §4.13",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 471,
+        "printed_page_in_part": "33",
+        "extracted_page_text_sha256": "90727ba9800f7ed5695669ce02d7a0ee5fc4c3606f860a8ba4bc07bf398ce748",
+        "extracted_page_text_bytes": 6792
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 3 §5.13",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 472,
+        "printed_page_in_part": "98",
+        "extracted_page_text_sha256": "fd6fc5f742eedb4676e41704031a67c62d6bf1503a2605d8b9639ed7f4c2e16a",
+        "extracted_page_text_bytes": 6378
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 3 §6.13",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 473,
+        "printed_page_in_part": "127",
+        "extracted_page_text_sha256": "46af37dfffc01a70f4c8807f16c3c83fa6cf73a0fa7c263222239fe545365646",
+        "extracted_page_text_bytes": 2325
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 3 Annex A §3.1.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 612,
+        "printed_page_in_part": "1",
+        "extracted_page_text_sha256": "57f15c0a776a1b69d18a2c59580c0a73f6c13253bbe52509d7ee1a50f6b714b5",
+        "extracted_page_text_bytes": 6688
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 3 Annex A §3.5.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 612,
+        "printed_page_in_part": "5",
+        "extracted_page_text_sha256": "57f15c0a776a1b69d18a2c59580c0a73f6c13253bbe52509d7ee1a50f6b714b5",
+        "extracted_page_text_bytes": 6688
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 3 Annex A §3.6.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 612,
+        "printed_page_in_part": "7",
+        "extracted_page_text_sha256": "57f15c0a776a1b69d18a2c59580c0a73f6c13253bbe52509d7ee1a50f6b714b5",
+        "extracted_page_text_bytes": 6688
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    },
+    {
+      "clause_id": "Part 3 Annex A §3.7",
+      "classification": "metadata_terminology_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 613,
+        "printed_page_in_part": "11",
+        "extracted_page_text_sha256": "22045666897ba8af9b33ebe33e21ea22b6df950697d0aff380ca4e9d3ff7b8e0",
+        "extracted_page_text_bytes": 3498
+      },
+      "evidence_target": "standard-metadata.definitions/acronyms",
+      "next_action": "Reconcile terms and units with packaged metadata; create a typed API only when a calculation-affecting requirement is identified."
+    },
+    {
+      "clause_id": "Part 3 Annex A §5.1",
+      "classification": "workflow_scope_review",
+      "status": "machine_reviewed",
+      "source_locator": {
+        "pdf": "API-581-2016.pdf",
+        "toc_pdf_page": 613,
+        "printed_page_in_part": "24",
+        "extracted_page_text_sha256": "22045666897ba8af9b33ebe33e21ea22b6df950697d0aff380ca4e9d3ff7b8e0",
+        "extracted_page_text_bytes": 3498
+      },
+      "evidence_target": "catalog.scope_boundaries and integration workflows",
+      "next_action": "Record applicability and exclusions, then link actionable requirements to an existing API or explicit boundary."
+    }
+  ]
+}

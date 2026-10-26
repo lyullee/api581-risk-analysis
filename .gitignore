@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+tmp/
+runtime/
+build/
+dist/
+# Licensed/third-party source documents are kept out of public releases.
+*.pdf
+*.docx
+*.doc
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+# Local credentials, publication tokens and generated provenance.
+.pypirc
+.env
+*.token
+*.key

@@ -1,0 +1,22 @@
+{
+  "context": {"asset_id": "DEMO-HIC-001", "observed_at": "2026-10-24T15:00:00+09:00"},
+  "steps": [
+    {"step_id": "gff", "calculation_id": "frequency/generic", "inputs": {"component_type": "PIPE-8"}},
+    {"step_id": "management", "calculation_id": "frequency/management-factor", "inputs": {"score": 500}},
+    {"step_id": "environment", "calculation_id": "damage/wet-h2s-environment", "inputs": {"water_ph": 4, "h2s_in_water_ppm": 5000, "cyanides_present": false}},
+    {"step_id": "susceptibility", "calculation_id": "damage/hic-h2s-susceptibility", "inputs": {
+      "environmental_severity": {"$ref": "environment.outputs.environmental_severity"},
+      "steel_sulfur_weight_percent": 0.02, "product_form": "plate_or_welded", "pwht": false
+    }},
+    {"step_id": "damage", "calculation_id": "damage/hic-sohic-h2s", "inputs": {
+      "susceptibility": {"$ref": "susceptibility.outputs.susceptibility"},
+      "confirmed_cracking": false, "unrepaired_cracks": false, "years_since_qualifying_inspection": 10,
+      "inspections": {"a": 1, "b": 0, "c": 0, "d": 0}, "monitoring": "both"
+    }},
+    {"step_id": "frequency", "calculation_id": "frequency/adjusted", "inputs": {
+      "generic_frequency_per_year": {"$ref": "gff.outputs.total_per_year"},
+      "total_damage_factor": {"$ref": "damage.outputs.damage_factor"},
+      "management_factor": {"$ref": "management.outputs.management_factor"}
+    }}
+  ]
+}

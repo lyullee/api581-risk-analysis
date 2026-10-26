@@ -1,0 +1,233 @@
+{
+  "StandardDefinition": {
+    "additionalProperties": false,
+    "properties": {
+      "clause": {
+        "minLength": 1,
+        "title": "Clause",
+        "type": "string"
+      },
+      "term": {
+        "minLength": 1,
+        "title": "Term",
+        "type": "string"
+      },
+      "acronym": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Acronym"
+      },
+      "definition": {
+        "minLength": 1,
+        "title": "Definition",
+        "type": "string"
+      },
+      "source_page": {
+        "exclusiveMinimum": 0,
+        "title": "Source Page",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "clause",
+      "term",
+      "definition",
+      "source_page"
+    ],
+    "title": "StandardDefinition",
+    "type": "object"
+  },
+  "StandardAcronym": {
+    "additionalProperties": false,
+    "properties": {
+      "acronym": {
+        "minLength": 1,
+        "title": "Acronym",
+        "type": "string"
+      },
+      "expansion": {
+        "minLength": 1,
+        "title": "Expansion",
+        "type": "string"
+      },
+      "source_page": {
+        "exclusiveMinimum": 0,
+        "title": "Source Page",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "acronym",
+      "expansion",
+      "source_page"
+    ],
+    "title": "StandardAcronym",
+    "type": "object"
+  },
+  "StandardReference": {
+    "additionalProperties": false,
+    "properties": {
+      "category": {
+        "pattern": "^(normative|informative)$",
+        "title": "Category",
+        "type": "string"
+      },
+      "number": {
+        "exclusiveMinimum": 0,
+        "title": "Number",
+        "type": "integer"
+      },
+      "citation": {
+        "minLength": 1,
+        "title": "Citation",
+        "type": "string"
+      },
+      "source_page": {
+        "exclusiveMinimum": 0,
+        "title": "Source Page",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "category",
+      "number",
+      "citation",
+      "source_page"
+    ],
+    "title": "StandardReference",
+    "type": "object"
+  },
+  "StandardSection": {
+    "description": "Typed view of one source-heading ledger entry.",
+    "properties": {
+      "id": {
+        "minLength": 1,
+        "title": "Id",
+        "type": "string"
+      },
+      "title": {
+        "minLength": 1,
+        "title": "Title",
+        "type": "string"
+      },
+      "status": {
+        "pattern": "^(partial|not_implemented)$",
+        "title": "Status",
+        "type": "string"
+      },
+      "review_category": {
+        "pattern": "^(technical_scope_review|supporting_text_review)$",
+        "title": "Review Category",
+        "type": "string"
+      },
+      "scope": {
+        "minLength": 1,
+        "title": "Scope",
+        "type": "string"
+      },
+      "calculation_ids": {
+        "default": [],
+        "items": {
+          "type": "string"
+        },
+        "title": "Calculation Ids",
+        "type": "array"
+      },
+      "next_evidence_needed": {
+        "minLength": 1,
+        "title": "Next Evidence Needed",
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "status",
+      "review_category",
+      "scope",
+      "next_evidence_needed"
+    ],
+    "title": "StandardSection",
+    "type": "object"
+  },
+  "DocumentaryCoverage": {
+    "additionalProperties": false,
+    "description": "Typed documentary-evidence boundary for the source heading ledger.",
+    "properties": {
+      "standard_edition": {
+        "minLength": 1,
+        "title": "Standard Edition",
+        "type": "string"
+      },
+      "source_sha256": {
+        "maxLength": 64,
+        "minLength": 64,
+        "title": "Source Sha256",
+        "type": "string"
+      },
+      "metadata_sources": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "Metadata Sources",
+        "type": "object"
+      },
+      "metadata_covered_section_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Metadata Covered Section Ids",
+        "type": "array"
+      },
+      "metadata_covered_count": {
+        "minimum": 0,
+        "title": "Metadata Covered Count",
+        "type": "integer"
+      },
+      "supporting_review_section_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Supporting Review Section Ids",
+        "type": "array"
+      },
+      "supporting_review_count": {
+        "minimum": 0,
+        "title": "Supporting Review Count",
+        "type": "integer"
+      },
+      "unimplemented_supporting_section_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Unimplemented Supporting Section Ids",
+        "type": "array"
+      },
+      "unimplemented_supporting_count": {
+        "minimum": 0,
+        "title": "Unimplemented Supporting Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "standard_edition",
+      "source_sha256",
+      "metadata_sources",
+      "metadata_covered_section_ids",
+      "metadata_covered_count",
+      "supporting_review_section_ids",
+      "supporting_review_count",
+      "unimplemented_supporting_section_ids",
+      "unimplemented_supporting_count"
+    ],
+    "title": "DocumentaryCoverage",
+    "type": "object"
+  }
+}

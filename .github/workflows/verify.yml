@@ -1,0 +1,81 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install package and test dependencies
+        run: python -m pip install ".[test,source]"
+      - name: Regenerate typed contracts
+        run: |
+          python scripts/build_python_api.py
+          python scripts/export_contracts.py
+          python scripts/build_test_evidence.py
+          if [ -f API-581-2016.pdf ]; then
+            python scripts/build_inventory.py
+            python scripts/build_remaining_work.py
+            python scripts/build_standard_metadata.py
+            git diff --exit-code -- src/api581/data/standard-metadata.json
+          fi
+      - name: Run release gates
+        run: |
+          python scripts/verify_release.py --write-evidence
+          python -c "import api581; s=api581.coverage_summary(); assert s['unlinked_calculation_count'] == 0; assert s['unreferenced_calculation_ids'] == []; print('traceability gate ok')"
+          python scripts/verify_reference_fixtures.py
+          python scripts/check_doc_api_paths.py
+          python scripts/check_unimplemented_bodies.py
+          python scripts/check_api520_boundary.py
+          if [ -f API-581-2016.pdf ]; then
+            python scripts/build_supporting_text_review.py
+          else
+            echo "canonical source PDF not present; using committed supporting-text report"
+          fi
+          python scripts/verify_supporting_text_queue.py
+          # Nurion/native receipts are external, hash-pinned release evidence
+          # and are intentionally not committed under tmp/.  Validate them
+          # when a release evidence bundle is present; ordinary CI still runs
+          # all reproducible source/test gates below.
+          if compgen -G 'tmp/nurion-parallel-*-reconciled-*.json' > /dev/null && [ -f tmp/native-suite-latest.json ]; then
+            python scripts/verify_completion_matrix.py
+            python scripts/verify_provenance.py
+          else
+            echo "external Nurion/native provenance bundle not present; deferred to release evidence job"
+          fi
+          python -m pip check
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Run pure-Python integration examples
+        run: |
+          for example in \
+            python_composition.py \
+            python_workflow.py \
+            level2_risk_assessment.py \
+            tank_bottom_corrosion_to_risk.py \
+            tank_geometry_to_risk.py \
+            prd_leakage_assessment.py \
+            two_phase_event_risk.py \
+            digital_twin_risk_assessment.py; do
+            python "examples/$example"
+          done
+      - name: Run digital-twin batch stress contract
+        run: python scripts/digital_twin_stress.py
+      - name: Build wheel and smoke-test packaged schemas
+        run: |
+          python -m pip wheel --no-deps --no-build-isolation . --wheel-dir dist
+          python -m pip install --no-index --no-deps --find-links dist --target /tmp/api581-wheel-smoke api581-engine
+          python -c "import math, sys; sys.path.insert(0, '/tmp/api581-wheel-smoke'); import api581; from api581 import schema, evidence, standard; assert len(schema.python_api_schema()) == 509; assert len(schema.digital_twin_schema()) == 5; assert len(schema.standard_schema()) == 5; assert 'direct_public_test_modules' in schema.digital_twin_schema()['TwinCalculationResponse']['properties']; assert standard.standard_metadata()['source_sha256'] == '89a38c69ac9b88e980145668691490ac27fbc0e81746916c9a454e45bfea5446'; assert standard.standard_metadata()['definition_count'] == 80; assert standard.standard_metadata()['acronym_count'] == 125; assert standard.standard_metadata()['section_count'] == 861; assert len(standard.sections(scope='Part 2', review_category='technical_scope_review')) == 205; assert len(evidence.native_engine_evidence()['runs']) == 9; assert len(evidence.native_engine_evidence_hash()) == 64; assert evidence.software_test_evidence()['calculation_count'] == 509; assert len(evidence.software_test_evidence_hash()) == 64; assert len(evidence.reference_fixture_evidence()['fixtures']) == 108; assert len(evidence.reference_fixture_evidence_hash()) == 64; assert evidence.calculation_test_modules('release/gas'); summary = api581.coverage_summary(); assert summary['direct_public_test_count'] == 323; assert len(api581.validation_queue(public_test=True)) == 323; assert len(summary['validation_by_domain']) == 19; assert summary['validation_by_domain']['dispersion']['native_engine_fixture_verified'] == 12; assert summary['validation_by_domain']['risk']['with_public_test'] == 6; assert len(summary['scope_status_counts']) == 7; assert summary['scope_status_counts']['Part 2']['partial'] == 277; assert len(api581.validation_queue(domain='dispersion', validation_level='native_engine_fixture_verified')) == 12; fixture = {'component_type':'PIPE-8','management_score':500.0,'total_damage_factor':2.0,'damage_factor_source':'wheel-smoke','consequences':[{'hole':'small','equipment_area_m2':1.0,'personnel_area_m2':2.0,'financial_consequence':10.0},{'hole':'medium','equipment_area_m2':2.0,'personnel_area_m2':3.0,'financial_consequence':20.0},{'hole':'large','equipment_area_m2':3.0,'personnel_area_m2':4.0,'financial_consequence':30.0},{'hole':'rupture','equipment_area_m2':4.0,'personnel_area_m2':5.0,'financial_consequence':40.0}],'consequence_source':'wheel-smoke','currency':'USD'}; assert math.isclose(api581.evaluate('risk/assessment', fixture)['outputs']['risk']['financial_risk_per_year'], 0.001128, rel_tol=1e-12, abs_tol=1e-15); print('wheel schema/evidence/standard/reference-fixture/public-test/twin-provenance smoke ok')"
+      - name: Build and validate source distribution
+        run: |
+          python -m pip install build twine
+          python -m build --sdist --outdir dist
+          python -m twine check dist/*.tar.gz
+          python -m pip install --no-deps --target /tmp/api581-sdist-smoke dist/*.tar.gz
+          python -c "import sys; sys.path.insert(0, '/tmp/api581-sdist-smoke'); import api581; from api581 import evidence, schema, standard; assert len(schema.python_api_schema()) == 509; assert len(schema.standard_schema()) == 5; assert len(schema.digital_twin_schema()) == 5; assert 'direct_public_test_modules' in schema.digital_twin_schema()['TwinCalculationResponse']['properties']; assert standard.standard_metadata()['section_count'] == 861; assert len(evidence.reference_fixture_evidence()['fixtures']) == 108; assert api581.coverage_summary()['direct_public_test_count'] == 323; assert len(api581.validation_queue(public_test=True)) == 323; print('sdist schema/standard/reference-fixture/public-test/twin-provenance smoke ok')"

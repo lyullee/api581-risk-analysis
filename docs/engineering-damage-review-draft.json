@@ -1,0 +1,160 @@
+{
+  "report": "api581-engineering-damage-review-draft-v1",
+  "generated_at": "2026-10-26T04:18:30.984920+00:00",
+  "source_document": "API-581-2016.pdf",
+  "source_document_sha256": "89a38c69ac9b88e980145668691490ac27fbc0e81746916c9a454e45bfea5446",
+  "scope_note": "Evidence draft only; reviewer signatures are intentionally empty.",
+  "review_count": 10,
+  "clauses": [
+    {
+      "clause_id": "Part 2 Annex B §2.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 317,
+      "source_page_text_sha256": "43c20d91faca3f6cef5554508b91c715dc13869c67dbef4318874b9fe8455ee6",
+      "source_page_text_bytes": 6501,
+      "source_locator_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §3.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 317,
+      "source_page_text_sha256": "43c20d91faca3f6cef5554508b91c715dc13869c67dbef4318874b9fe8455ee6",
+      "source_page_text_bytes": 6501,
+      "source_locator_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §4.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 317,
+      "source_page_text_sha256": "43c20d91faca3f6cef5554508b91c715dc13869c67dbef4318874b9fe8455ee6",
+      "source_page_text_bytes": 6501,
+      "source_locator_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §5.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 317,
+      "source_page_text_sha256": "43c20d91faca3f6cef5554508b91c715dc13869c67dbef4318874b9fe8455ee6",
+      "source_page_text_bytes": 6501,
+      "source_locator_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §6.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 317,
+      "source_page_text_sha256": "43c20d91faca3f6cef5554508b91c715dc13869c67dbef4318874b9fe8455ee6",
+      "source_page_text_bytes": 6501,
+      "source_locator_sha256": "1314469ef60a70934e7ed492e075dd14454b52407ef44698ba6e35932b6d6ac6",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §8.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 318,
+      "source_page_text_sha256": "548f76db9d07793b7be16757831916067a7e38fc2014abda51337fd630af177a",
+      "source_page_text_bytes": 6756,
+      "source_locator_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §9.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 318,
+      "source_page_text_sha256": "548f76db9d07793b7be16757831916067a7e38fc2014abda51337fd630af177a",
+      "source_page_text_bytes": 6756,
+      "source_locator_sha256": "48b50a067d1dedc614c281954fb2bf01900cf1d6ec30462e0c913a49c2690998",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §12.2",
+      "title": "Description of Damage",
+      "source_pdf_page": 319,
+      "source_page_text_sha256": "6c98064cf0e5295e6b73d55c3fa241054d5bcd6bd6f56ce719d4041d82243b63",
+      "source_page_text_bytes": 6567,
+      "source_locator_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §13.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 319,
+      "source_page_text_sha256": "6c98064cf0e5295e6b73d55c3fa241054d5bcd6bd6f56ce719d4041d82243b63",
+      "source_page_text_bytes": 6567,
+      "source_locator_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    },
+    {
+      "clause_id": "Part 2 Annex B §14.1",
+      "title": "Description of Damage",
+      "source_pdf_page": 319,
+      "source_page_text_sha256": "6c98064cf0e5295e6b73d55c3fa241054d5bcd6bd6f56ce719d4041d82243b63",
+      "source_page_text_bytes": 6567,
+      "source_locator_sha256": "ca09be8ba18318f5c88d4057c0ffa8e1ca23685904f7fa2fef17ef51485dfa95",
+      "review_status": "public_data_reviewed",
+      "review_questions": [
+        "Does the damage description apply to the intended API-581 equipment/material domain?",
+        "Are exclusions, susceptibility conditions and interaction with the linked screening API correctly represented?",
+        "Does the implementation require any site-specific inspection, materials or operating evidence?"
+      ],
+      "external_review": "out_of_scope"
+    }
+  ]
+}

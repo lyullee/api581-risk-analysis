@@ -1,0 +1,7 @@
+{
+  "description": "Calculations lacking a direct numeric/branch test-module reference; registry contracts remain separate evidence.",
+  "calculation_count": 509,
+  "direct_test_gap_count": 0,
+  "domain_counts": {},
+  "calculations": []
+}

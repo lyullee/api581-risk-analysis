@@ -1,0 +1,78 @@
+#!/bin/bash
+# Parallel API-581 verification shards. Submit with:
+#   qsub -J 0-9 scripts/nurion_api581_array.pbs  # efficient specialized profile
+#   qsub -J 0-63 scripts/nurion_api581_array.pbs # exhaustive profile
+# Each array task has an isolated local work directory and writes one receipt
+# into the shared submit directory; no task mutates another task's files.
+#PBS -S /bin/bash
+#PBS -N API581_ARR
+#PBS -q normal
+#PBS -A inhouse
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=1
+#PBS -l walltime=01:00:00
+#PBS -j oe
+
+unset BASH_ENV ENV
+set -Eeo pipefail
+cd "${PBS_O_WORKDIR:?}"
+root="$PWD"
+idx="${PBS_ARRAY_INDEX:-${PBS_ARRAYID:-0}}"
+work="${TMPDIR:-/tmp}/api581-${PBS_JOBID//[^A-Za-z0-9_-]/_}-${idx}"
+rm -rf "$work"
+mkdir -p "$work/vendor" "$work/src" "$work/scripts" "$work/tests" "$work/examples" "$work/docs"
+cp -a "$root/src/." "$work/src/"
+cp -a "$root/scripts/." "$work/scripts/"
+cp -a "$root/tests/." "$work/tests/"
+cp -a "$root/examples/." "$work/examples/"
+cp -a "$root/docs/." "$work/docs/"
+cp -a "$root/pyproject.toml" "$root/README.md" "$work/"
+source /etc/profile
+module load python/3.12.5
+set -u
+python3 -m pip install --no-index --find-links "$root/deps" --target "$work/vendor" \
+  pydantic==2.14.1 pytest==9.1.1 pysqlite3-binary==0.5.4.post2 >/dev/null
+export PYTHONPATH="$work/vendor:$work/src"
+
+case "$idx" in
+  0) label=import; timeout_seconds=300; command=(python3 -c 'import api581; assert len(api581.list_calculations()) == 509; print("import-ok")') ;; 
+  1) label=release; timeout_seconds=600; command=(python3 scripts/verify_release.py) ;; 
+  2) label=fixtures; timeout_seconds=600; command=(python3 scripts/verify_reference_fixtures.py --allow-optional-missing) ;; 
+  3) label=digital-twin; timeout_seconds=600; command=(python3 examples/digital_twin_hpc_batch.py) ;; 
+  4) label=catalog-tests; timeout_seconds=300; command=(python3 -m pytest -vv -s tests/test_catalog.py) ;; 
+  5) label=contract-tests; timeout_seconds=900; command=(python3 -m pytest -q tests/test_digital_twin_contract.py tests/test_slabx_adapter.py) ;; 
+  6) label=catalog-performance; timeout_seconds=120; command=(python3 -c 'import time; import api581; queries=({"validation_level":"native_engine_fixture_verified"},{"validation_level":"software_tested_only"},{"direct_test":True},{"direct_test":False},{"public_test":True},{"public_test":False}); started=time.perf_counter(); [api581.validation_queue(**query) for query in queries]; elapsed=time.perf_counter()-started; print(f"catalog-validation-seconds={elapsed:.6f}"); assert elapsed < 30, elapsed') ;; 
+  7) label=full-python-regression; timeout_seconds=900; command=(python3 -m pytest -q) ;; 
+  8) label=full-regression-without-sqlite; timeout_seconds=900; command=(python3 -m pytest -q --ignore tests/test_python_api.py) ;; 
+  9) label=digital-twin-stress; timeout_seconds=300; command=(python3 scripts/digital_twin_stress.py) ;; 
+  # Redundant full-regression replays use otherwise idle nodes to expose
+  # nondeterminism and environment-specific failures.  They are independent
+  # of the specialized 0-9 checks and are intentionally safe to repeat.
+  10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30)
+    label=parallel-regression-${idx}; timeout_seconds=900; command=(python3 -m pytest -q) ;;
+ 31)
+    label=metadata-gates; timeout_seconds=300; command=(bash -lc 'python3 scripts/verify_release.py && python3 scripts/check_api520_boundary.py && python3 scripts/verify_supporting_text_queue.py && python3 scripts/verify_completion_matrix.py && python3 scripts/verify_provenance.py') ;;
+  32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|54|55|56|57|58|59|60|61|62|63)
+    label=input-matrix-${idx}; timeout_seconds=600; command=(python3 scripts/nurion_input_matrix.py --shard-index "$((idx-32))" --shard-count 32 --cases-per-shard 500 --seed 581) ;;
+  *) echo "unsupported array index: $idx" >&2; exit 2 ;;
+esac
+
+out="$root/shard-${idx}.out"
+err="$root/shard-${idx}.err"
+status="$root/shard-${idx}.status"
+set +e
+timeout --signal=TERM --kill-after=30s "$timeout_seconds" "${command[@]}" >"$out" 2>"$err"
+rc=$?
+set -e
+if [[ "$rc" -eq 0 ]]; then
+  state=passed
+elif [[ "$rc" -eq 124 || "$rc" -eq 137 ]]; then
+  state=timed_out
+else
+  state=failed
+fi
+printf '%s\n' "$state" >"$status"
+printf 'index=%s\nlabel=%s\nstate=%s\nreturn_code=%s\ntimeout_seconds=%s\njob=%s\nhost=%s\n' \
+  "$idx" "$label" "$state" "$rc" "$timeout_seconds" "$PBS_JOBID" "$(hostname)" >"$root/shard-${idx}.meta"
+printf 'API581_ARRAY_SHARD index=%s label=%s status=%s job=%s host=%s\n' \
+  "$idx" "$label" "$state" "$PBS_JOBID" "$(hostname)"
+exit "$rc"

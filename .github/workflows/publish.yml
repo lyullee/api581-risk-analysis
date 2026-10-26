@@ -1,0 +1,56 @@
+name: publish
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade build twine
+          python -m pip install ".[test,source]"
+      - name: Run release verification before publish
+        run: |
+          python scripts/verify_release.py
+          python scripts/verify_reference_fixtures.py
+          python scripts/check_doc_api_paths.py
+          python scripts/check_unimplemented_bodies.py
+          python scripts/check_api520_boundary.py
+          if [ -f API-581-2016.pdf ]; then
+            python scripts/build_supporting_text_review.py
+          else
+            echo "canonical source PDF not present; using committed supporting-text report"
+          fi
+          python scripts/verify_supporting_text_queue.py
+          if compgen -G 'tmp/nurion-parallel-*-reconciled-*.json' > /dev/null && [ -f tmp/native-suite-latest.json ]; then
+            python scripts/verify_completion_matrix.py
+            python scripts/verify_provenance.py
+          else
+            echo "external Nurion/native provenance bundle not present in checkout; publish uses package/release gates"
+          fi
+          python -c "import api581; s=api581.coverage_summary(); assert s['unlinked_calculation_count']==0; assert s['unreferenced_calculation_ids']==[]; print('publish traceability gate ok')"
+          python -m pytest -q
+      - name: Verify release version
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          PROJECT_VERSION=$(python -c "import tomllib; print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])")
+          TAG_VERSION="${RELEASE_TAG#v}"
+          test "$TAG_VERSION" = "$PROJECT_VERSION"
+      - name: Build distributions
+        run: python -m build
+      - name: Validate distributions
+        run: python -m twine check dist/*
+      - name: Publish to PyPI with trusted publishing
+        uses: pypa/gh-action-pypi-publish@release/v1

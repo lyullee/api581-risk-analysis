@@ -1,0 +1,58 @@
+{
+  "ScopeBoundary": {
+    "additionalProperties": false,
+    "description": "Typed record for an intentionally unsupported calculation boundary.",
+    "properties": {
+      "boundary_id": {
+        "maxLength": 200,
+        "minLength": 1,
+        "title": "Boundary Id",
+        "type": "string"
+      },
+      "status": {
+        "const": "not_implemented",
+        "title": "Status",
+        "type": "string"
+      },
+      "category": {
+        "enum": [
+          "external_reference_scope",
+          "native_engine_scope"
+        ],
+        "title": "Category",
+        "type": "string"
+      },
+      "reason": {
+        "maxLength": 1000,
+        "minLength": 1,
+        "title": "Reason",
+        "type": "string"
+      },
+      "next_evidence_needed": {
+        "maxLength": 1000,
+        "minLength": 1,
+        "title": "Next Evidence Needed",
+        "type": "string"
+      },
+      "related_calculation_ids": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 20,
+        "minItems": 1,
+        "title": "Related Calculation Ids",
+        "type": "array"
+      }
+    },
+    "required": [
+      "boundary_id",
+      "status",
+      "category",
+      "reason",
+      "next_evidence_needed",
+      "related_calculation_ids"
+    ],
+    "title": "ScopeBoundary",
+    "type": "object"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "context": {"asset_id": "DEMO-LEVEL1-001", "observed_at": "2026-10-24T15:00:00+09:00"},
+  "inputs": {
+    "source": {
+      "diameter_m": 0.0254,
+      "upstream_pressure_pa_abs": 1000000,
+      "temperature_k": 300,
+      "molecular_weight_kg_kmol": 23,
+      "heat_capacity_ratio": 1.3
+    },
+    "fluid": "C1-C2",
+    "final_release_phase": "gas",
+    "operating_temperature_k": 300,
+    "autoignition_temperature_k": 831.15,
+    "component_mass_kg": 100,
+    "inventory_group_mass_kg": 1000,
+    "detection": "A",
+    "isolation": "A",
+    "duration_hole": "medium",
+    "mitigation_fraction": 0.2
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "context": {"asset_id": "DEMO-CUI-001", "observed_at": "2026-10-24T15:00:00+09:00"},
+  "steps": [
+    {"step_id": "rate", "calculation_id": "damage/cui-base-rate", "inputs": {"temperature_k": 344.15, "driver": "marine_or_cooling_tower"}},
+    {"step_id": "damage", "calculation_id": "damage/cui", "inputs": {
+      "rate": {
+        "base_corrosion_rate_m_year": {"$ref": "rate.outputs.base_corrosion_rate_m_year"},
+        "water_retaining_design": true, "soil_or_water_interface": false,
+        "insulation": "foamglass", "complexity": "average", "insulation_condition": "average"
+      },
+      "coating": {"years_since_thickness_reading": 10, "coating_age_years": 5, "coating_quality": "medium"},
+      "strength": {"differential_pressure_pa": 1000000, "diameter_m": 1, "flow_stress_pa": 330000000,
+                   "starting_thickness_m": 0.01, "shape": "cylinder"},
+      "inspections": {"confidence": "low", "inspections_a": 1}
+    }}
+  ]
+}

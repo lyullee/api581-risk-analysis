@@ -1,0 +1,44 @@
+{
+  "standard_edition": "API-RP-581-2016-3rd-base",
+  "verification_date": "2026-10-25",
+  "environment": {
+    "slabx": "1.0.8",
+    "slabx-lh2": "0.2.0",
+    "CoolProp": "8.0.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "engine_source_fingerprints": {
+    "slabx": "cce58647c6f3d741ef125a790032d521f09ebd636f1b4a9188e89f8a812fae8a",
+    "slabx-lh2": "a7e27d03ae1f145acf779c07d2e6dbae9e99e8c73f77e690c25c0c6098fb0dd4"
+  },
+  "runs": {
+    "verify_native_dispersion.py": {
+      "status": "passed",
+      "checks": ["native_direct_exact_array_equivalence", "kg_kmol_and_humidity_unit_mapping", "boundary_censoring", "no_exceedance_nan_to_null", "lh2_native_execution", "lh2_premise_violation_blocks_distance", "concurrent_process_isolation_and_repeatability", "host_module_globals_unchanged"]
+    },
+    "verify_native_jet.py": {
+      "status": "passed",
+      "checks": ["horizontal_native_exact_arrays", "vertical_native_exact_arrays", "native_exit_velocity", "jet_at_y_exact_field", "source_handoff_boundary_censoring", "explicit_temperature_clamp", "buoyant_vertical_native_exact_arrays", "lh2_horizontal_native_run", "partition_to_native_exact_chain", "partitioned_planar_run"]
+    },
+    "verify_native_footprint.py": {
+      "status": "passed",
+      "checks": ["native_at_y_exact_field_equivalence", "crosswind_symmetry", "crosswind_grid_refinement", "lateral_censoring", "censored_flash_bridge_rejection", "native_flash_quarter_area_mapping", "lh2_planar_execution", "lh2_premise_blocks_area"]
+    },
+    "verify_native_toxic.py": {
+      "status": "passed",
+      "checks": ["historical_probit50_ppm_anchor", "direct_native_centreline_exact", "direct_native_planar_exact", "exposure_average_and_release_window_mapping", "independent_native_area_chain", "nonignition_probability_once", "toxic_equipment_zero", "censored_area_rejected", "short_source_window_rejected"]
+    },
+    "verify_native_saturation.py": {"status": "passed", "scope": "pure-fluid saturation, pressure-temperature round trip, Clapeyron identity and pool guards"},
+    "verify_native_flash.py": {"status": "passed", "scope": "native flash methods, phase endpoints, composition basis and typed partition closure"},
+    "verify_native_flash_pool.py": {"status": "passed", "scope": "EOS/partition/steady-pool/native chain and LH2 premise reporting"},
+    "verify_native_flashed_pool_footprint.py": {"status": "passed", "scope": "EOS-to-footprint/fire area mapping, grid refinement and censored consequence rejection"},
+    "verify_native_flashed_pool_risk.py": {"status": "passed", "scope": "GFF/Fms/DF/event-weather weighting and raw-area preservation"}
+  },
+  "limitations": [
+    "These are software integration and fixture checks, not API 581 conformity certification.",
+    "Native source domains, site applicability, fluid properties, thresholds and exposure assumptions remain caller-qualified.",
+    "A passing LH2 premise check is not experimental or field validation.",
+    "The evidence is tied to the listed package versions and source fingerprints."
+  ]
+}

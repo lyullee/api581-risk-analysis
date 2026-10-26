@@ -1,0 +1,62 @@
+{
+  "matrix": "api581-completion-matrix-v1",
+  "generated_at": "2026-10-26T04:18:31.168338+00:00",
+  "certification_status": "software_verified_external_review_out_of_scope",
+  "requirements": [
+    {
+      "requirement": "individual_calculation_apis",
+      "status": "passed",
+      "evidence": "509 calculation registry/schema"
+    },
+    {
+      "requirement": "integrated_risk_workflow",
+      "status": "passed",
+      "evidence": "risk APIs and regression suite"
+    },
+    {
+      "requirement": "clause_calculation_test_traceability",
+      "status": "passed",
+      "evidence": "release-evidence.json (API 520 engineering utilities are intentionally outside the API 581 clause ledger)"
+    },
+    {
+      "requirement": "nurion_parallel_regression",
+      "status": "passed",
+      "evidence": "tmp/nurion-parallel-20261025T113434Z-reconciled-latest.json (64 reconciled shards)"
+    },
+    {
+      "requirement": "nurion_efficient_regression",
+      "status": "passed",
+      "evidence": "tmp/nurion-efficient-20261026T014258Z.json (10 specialized shards)"
+    },
+    {
+      "requirement": "broad_input_matrix",
+      "status": "passed",
+      "evidence": "16,000 input invariant cases"
+    },
+    {
+      "requirement": "slabx_native_contracts",
+      "status": "passed",
+      "evidence": "tmp/native-suite-latest.json (9 native verification scripts)"
+    },
+    {
+      "requirement": "release_artifacts",
+      "status": "passed",
+      "evidence": "wheel/sdist, twine, release-manifest.json"
+    },
+    {
+      "requirement": "supporting_text_review_queue",
+      "status": "passed",
+      "evidence": "docs/supporting-text-data-review.json (66 machine-reviewed; 10 public-data reviewed; external evaluation out of scope)"
+    },
+    {
+      "requirement": "api520_capacity_sizing",
+      "status": "passed",
+      "evidence": "api520/rp-520-1.pdf, seven typed calculation APIs, cross-standard fixtures"
+    },
+    {
+      "requirement": "slabx_buoyant_vertical_rise",
+      "status": "passed",
+      "evidence": "docs/NATIVE_ENGINE_EVIDENCE.json (Briggs buoyant effective-source tolerance-checked arrays)"
+    }
+  ]
+}

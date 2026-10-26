@@ -1,0 +1,138 @@
+{
+  "manifest": "api581-release-provenance-v1",
+  "generated_at": "2026-10-26T04:21:39.399584+00:00",
+  "package_artifacts": [
+    {
+      "path": "tmp/release-final-20261025br/api581_engine-0.1.0-py3-none-any.whl",
+      "bytes": 808777,
+      "sha256": "5917b4bce15fc78bda6d8b248e5fe17b80e51402c0d93344441cb97867a21d38"
+    },
+    {
+      "path": "tmp/release-final-20261025br/api581_engine-0.1.0.tar.gz",
+      "bytes": 952793,
+      "sha256": "7db5cdfbc44ba0d034f496bfa7046afece168fea0470961c2e5eb49478823cda"
+    }
+  ],
+  "evidence_artifacts": [
+    {
+      "path": "docs/release-evidence.json",
+      "bytes": 17591,
+      "sha256": "75586fe3f739ab1ec221d1081f6ed8edad254db94aa402beaff22bdff5430061"
+    },
+    {
+      "path": "src/api581/data/coverage.json",
+      "bytes": 827217,
+      "sha256": "e1c7ac67163f2eebbf3052720da42674a7efc573ac84ed19d70a61637c31981e"
+    },
+    {
+      "path": "docs/python-api.schema.json",
+      "bytes": 2819560,
+      "sha256": "3f1f7ab659d93e776ee499915c922d4a0bdc279438c8c1f04b54d3405d60ed0e"
+    },
+    {
+      "path": "docs/digital-twin.schema.json",
+      "bytes": 13203,
+      "sha256": "7ed234486b7c25095f2a4c24e7ff7591a4bd5125f8cd5ba142fad44d10403a11"
+    },
+    {
+      "path": "docs/INDEPENDENT_ENGINEERING_REVIEW_PACKET.md",
+      "bytes": 3305,
+      "sha256": "5aeea5684a4e84910dd24a51c866cede95956640f46fb5d2f9dccab4af6d8e70"
+    },
+    {
+      "path": "docs/NURION_CERTIFICATION_REPORT.md",
+      "bytes": 2399,
+      "sha256": "daf1fce3537906358023d06bacc714f8ddcba582e82ac54ab7094bbd90a5efc7"
+    },
+    {
+      "path": "docs/NATIVE_ENGINE_EVIDENCE.json",
+      "bytes": 3056,
+      "sha256": "cd0c57de21225a91ebf1a27c0b4316d56510e2321d10954760096a5a6ae7bc42"
+    },
+    {
+      "path": "src/api581/data/native-engine-evidence.json",
+      "bytes": 3056,
+      "sha256": "cd0c57de21225a91ebf1a27c0b4316d56510e2321d10954760096a5a6ae7bc42"
+    },
+    {
+      "path": "docs/completion-matrix.json",
+      "bytes": 2197,
+      "sha256": "307cfbf6657ea1359ae185cab40907f56d6664acbc1ca6bcafed7aab5b59367e"
+    },
+    {
+      "path": "docs/supporting-text-review.json",
+      "bytes": 58738,
+      "sha256": "97789610e18cf43d9dac3a42b8ca00697e8995c98fe6a5413d7db6b54b35dc07"
+    },
+    {
+      "path": "docs/supporting-text-data-review.json",
+      "bytes": 50447,
+      "sha256": "4701c9cf342b278cde87fd920c1b523f43b34c48f2334bbdb2cd8f6227e1129d"
+    },
+    {
+      "path": "docs/engineering-damage-review-draft.json",
+      "bytes": 8650,
+      "sha256": "6e3755a5fcf821a7d345f282b95f9d60913047ae3f9890be8da1c8b3e228443f"
+    },
+    {
+      "path": "docs/ENGINEERING_REVIEW_SIGNOFF_TEMPLATE.md",
+      "bytes": 956,
+      "sha256": "78e64db931ddb8a31d2aac2afadd9298394d6523bee7f8cbfbf825c483b93772"
+    },
+    {
+      "path": "src/api581/data/supporting-text-review.json",
+      "bytes": 58738,
+      "sha256": "97789610e18cf43d9dac3a42b8ca00697e8995c98fe6a5413d7db6b54b35dc07"
+    },
+    {
+      "path": "docs/direct-test-queue.json",
+      "bytes": 246,
+      "sha256": "b982fdaf6bcb62f637fa8c6c030f360de71d43318d1606e309eeeea3ee4702f5"
+    },
+    {
+      "path": "src/api581/data/direct-test-queue.json",
+      "bytes": 246,
+      "sha256": "b982fdaf6bcb62f637fa8c6c030f360de71d43318d1606e309eeeea3ee4702f5"
+    },
+    {
+      "path": "tmp/native-suite-latest.json",
+      "bytes": 7243,
+      "sha256": "620a0b30ba327db1ca91477266b6c2bb07f4bd56bfcd38cc78833bd6e9ba04b7"
+    },
+    {
+      "path": "tmp/nurion-parallel-20261025T113434Z-reconciled-latest.json",
+      "bytes": 57205,
+      "sha256": "700f9b0dd00b5a6ffee429180947155ec80f3e8e24123588d904fd5ad87aaf7e"
+    },
+    {
+      "path": "docs/NURION_EFFICIENT_RUN.md",
+      "bytes": 1495,
+      "sha256": "d7a1917dc362969595664a9b94128b750eb08ca397e02d1f0ae570defc2239c1"
+    },
+    {
+      "path": "docs/FINAL_AUDIT.md",
+      "bytes": 719,
+      "sha256": "58cc804c295baf0b93cf3d552a6cd245f89be8ef6c69d591581f08dbea2b4a79"
+    },
+    {
+      "path": "tmp/final-audit-latest.json",
+      "bytes": 6199,
+      "sha256": "db7dbe314db5374eda7909f835e259a5afb215e1e603a256892482a28686d297"
+    },
+    {
+      "path": "tmp/nurion-efficient-20261026T014258Z.json",
+      "bytes": 8244,
+      "sha256": "b01dcddabe6d211d7027f30e4f1c6563f6452f5c923f60fce24aa0cc484cf16d"
+    }
+  ],
+  "nurion_run_id": "20261025T113434Z-parallel-reconciled",
+  "nurion_summary": {
+    "total": 64,
+    "passed": 64,
+    "failed": 0,
+    "timed_out": 0,
+    "running": 0
+  },
+  "certification_status": "software_verified_external_review_out_of_scope",
+  "audit_scope": "Package and reproducibility provenance; external evaluation is explicitly outside project scope."
+}

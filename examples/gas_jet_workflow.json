@@ -1,0 +1,64 @@
+{
+  "context": {
+    "asset_id": "DEMO-PIPE-001",
+    "component_id": "DEMO-SEGMENT-A",
+    "observed_at": "2026-10-24T15:00:00+09:00",
+    "correlation_id": "DEVELOPMENT-EXAMPLE-ONLY"
+  },
+  "steps": [
+    {
+      "step_id": "release",
+      "calculation_id": "release/gas",
+      "inputs": {
+        "diameter_m": 0.01,
+        "upstream_pressure_pa_abs": 1000000,
+        "temperature_k": 300,
+        "molecular_weight_kg_kmol": 16.04,
+        "heat_capacity_ratio": 1.3
+      }
+    },
+    {
+      "step_id": "power",
+      "calculation_id": "effects/jet-fire-power",
+      "inputs": {
+        "mass_rate_kg_s": {"$ref": "release.outputs.mass_rate_kg_s"},
+        "heat_of_combustion_j_kg": 50000000,
+        "radiative_fraction": 0.35
+      }
+    },
+    {
+      "step_id": "injury",
+      "calculation_id": "effects/jet-fire-distance",
+      "inputs": {
+        "radiated_power_w": {"$ref": "power.outputs.radiated_power_w"},
+        "threshold_w_m2": 12600,
+        "transmissivity_model": "constant",
+        "atmospheric_transmissivity": 0.8
+      }
+    },
+    {
+      "step_id": "equipment",
+      "calculation_id": "effects/jet-fire-distance",
+      "inputs": {
+        "radiated_power_w": {"$ref": "power.outputs.radiated_power_w"},
+        "threshold_w_m2": 37800,
+        "transmissivity_model": "constant",
+        "atmospheric_transmissivity": 0.8
+      }
+    },
+    {
+      "step_id": "risk",
+      "calculation_id": "risk/aggregate",
+      "inputs": {
+        "currency": "KRW",
+        "scenarios": [{
+          "scenario_id": "ASSUMED_IMMEDIATE_IGNITION_ONLY",
+          "annual_failure_frequency": 0.00001,
+          "equipment_area_m2": {"$ref": "equipment.outputs.consequence_area_m2"},
+          "personnel_area_m2": {"$ref": "injury.outputs.consequence_area_m2"},
+          "financial_consequence": 0
+        }]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1328 @@
+{
+  "standard_edition": "API-RP-581-2016-3rd-base",
+  "source": "API-581-2016.pdf, Part 1 §§2-3",
+  "source_sha256": "89a38c69ac9b88e980145668691490ac27fbc0e81746916c9a454e45bfea5446",
+  "references": [
+    {
+      "category": "normative",
+      "number": 1,
+      "citation": "API Recommended Practice 580 Recommended Practice for Risk-Based Inspection, American Petroleum Institute, Washington, D.C.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 1,
+      "citation": "API 579-1/ASME FFS-1 2007 Fitness-For-Service, American Petroleum Institute, Washington , D.C., 2007.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 2,
+      "citation": "CCPS, Guidelines for Consequence Analysis of Chemical Releases, ISBN: 978-0-8169.0786-1, published by the Center for Chemical Process Safety of the American Institute of Chemical Engineers , 1995.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 3,
+      "citation": "TNO, Methods for Calculation of Physical Effects (TNO Yellow Book, Third Edition), Chapter 6: Heat Flux from Fires, CPR 14E (ISSN 0921-9633/2 .10.014/9110), Servicecentrum, The Hague, 1997.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 4,
+      "citation": "CCPS, Guidelines for Evaluating the Characteristics of Vapor Cloud Explosions, Flash Fires, and BLEVEs, ISBN 0-8169-0474-X, published by the Center for Chemical Process Safety of the American Institute of Chemical Engineers, 1994.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 5,
+      "citation": "CCPS, Guidelines for Vapor Cloud Explosions, Pressure Vessel Burst, BLEVE and Flash Fires Hazards, ISBN 978-0-470-25147-8, published by the Center for Chemical Process Safety of the American Institute of Chemical Engineers, 2010.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 6,
+      "citation": "Lees, Frank P., Loss Prevention in the Process Industries: Hazard Identification , Assessment and Control, Butterworth-Heinemann, Second Edition, Reprinted 2001.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 7,
+      "citation": "Baker, W.E., P.A. Cox, P.S. Westine, J.J. Kulesz, and RA Strelow, Explosion Hazards and Evaluation, New York: Elsevier, 1983.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 8,
+      "citation": "OFCM, Directory of Atmospheric Transporl and Diffusion Consequence Assessment Models (FC-I3-1999) , published by the Office of the Federal Coordinator for Meteorological Services and Supporting Research (OFCM) with the assistance of SCAPA members, the document is available at http:/ /www.ofcm .gov/atd _ dir/pdf/frontpage . htm.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 9,
+      "citation": "Cox, A.W., Lees, F. P., and Ang, M.L., Classification of Hazardous Locations, Rugby: lnstn Chem. Engrs., 1990.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 10,
+      "citation": "Osage, DA, \"API 579-1/ASME FFS-1 2006 - A Joint API/ASME Fitness-For-Service Standard for Pressurized Equipment\", ESOPE Conference , Paris, France, 2007.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 11,
+      "citation": "API Recommended Practice 521 Guide for Pressure-Relieving and Depressuring Systems, American Petroleum Institute, Washington, D.C.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 12,
+      "citation": "API Recommended Practice 520 Part 1 - Sizing, Selection, and Installation of Pressure-Relieving Devices in Refineries, American Petroleum Institute, Washington, D.C.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 13,
+      "citation": "API Recommended Practice 576 Inspection of Pressure Relieving Devices, American Petroleum Institute, Washington, D.C.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 14,
+      "citation": "Abernethy, R.8., Ed., The New Weibull Handbook, 4th Edition, Published by Dr. Robert 8. Abernethy, 2000.",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 15,
+      "citation": "CCPS, Guidelines for Pressure Relief and Effluent Handling Systems, Center for Chemical Process Safety of the American Institute of Chemical Engineers, New York, 1998, ISBN 978-0-8169-0476-1 .",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 16,
+      "citation": "Lees, F. P., The Assessment of Human Reliability in Process Control, Institution of Chemical Engineers Conference on Human Reliability in the Process Control Centre, London, 1983. RISK-BAS KED INSPECTION METHODO LOGY, PART 1-INSPECTION PLANNING METHO DOLOGY 5",
+      "source_page": 4
+    },
+    {
+      "category": "informative",
+      "number": 17,
+      "citation": "International Electrotechnical Commission (IEC), IEC 61511, Functional Safety: Safety Instrumented Systems for the Process Sector, Geneva, Switzerland.",
+      "source_page": 5
+    },
+    {
+      "category": "informative",
+      "number": 18,
+      "citation": "Trident, Report to the Institute of Petroleum on the \"Development of Design Guidelines for Protection Against Over-Pressures in High Pressure Heat Exchangers: Phase One\", Trident Consultants Ltd and Foster Wheeler Energy, Report J2572, known as \"The Trident Report\", 1993.",
+      "source_page": 5
+    },
+    {
+      "category": "informative",
+      "number": 19,
+      "citation": "Nelson, Wayne, Applied Life Data Analysis, John Wiley, 1982.",
+      "source_page": 5
+    },
+    {
+      "category": "informative",
+      "number": 20,
+      "citation": "Mateshuki, R., \"The Role of Information Technology in Plant Reliability\", P/PM Technology, June 1999.",
+      "source_page": 5
+    },
+    {
+      "category": "informative",
+      "number": 21,
+      "citation": "Schulz, C.J., \"Applications of Statistics to HF Alky Exchanger Replacement Decision Making\", presented at the NPRA 2001 Annual Refinery & Petrochemical Maintenance Conference and Exhibition, 2001.",
+      "source_page": 5
+    }
+  ],
+  "definitions": [
+    {
+      "clause": "Part 1 §3.1.1",
+      "term": "aerosol",
+      "acronym": null,
+      "definition": "Liquid droplets small enough to be entrained in a vapor stream.",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.2",
+      "term": "atmospheric dispersion",
+      "acronym": null,
+      "definition": "The low momentum mixing of a gas or vapor with air. The mixing is the result of turbulent energy exchange, which is a function of wind (mechanical eddy formation) and atmospheric temperature profile (thermal eddy formation).",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.3",
+      "term": "auto-ignition temperature",
+      "acronym": null,
+      "definition": "The lowest temperature at which a fluid mixture can ignite without a source of ignition.",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.4",
+      "term": "boiling liquid expanding vapor explosion",
+      "acronym": "BLEVE",
+      "definition": "An event that occurs from the sudden release of a large mass of pressurized liquid (above the boiling point) to the atmosphere. A primary cause is an external flame impinging on the shell of a vessel above the liquid level, weakening the shell and resulting in sudden rupture.",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.5",
+      "term": "business interruption costs",
+      "acronym": null,
+      "definition": "financial consequence Includes the costs which are associated with any failure of equipment in a process plant. These include, but are not limited to the cost of equipment repair and replacement, downtime associated with equipment repair and replacement, costs due to potential injuries associated with a failure, and environmental cleanup costs.",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.6",
+      "term": "component",
+      "acronym": null,
+      "definition": "Any part that is designed and fabricated to a recognized code or standard. For example a pressure boundary may consist of components (cylindrical shell sections, formed heads, nozzles, atmospheric storage tank shell courses, atmospheric storage tank bottom plate, etc.).",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.7",
+      "term": "consequence",
+      "acronym": null,
+      "definition": "The outcome of an event or situation expressed qualitatively or quantitatively, being a loss, injury, disadvantage or gain. 6 API RECOMMENDED PRACTICE 581",
+      "source_page": 5
+    },
+    {
+      "clause": "Part 1 §3.1.8",
+      "term": "consequence analysis",
+      "acronym": null,
+      "definition": "The analysis of the expected effects of incident outcome cases independent of frequency or probability.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.9",
+      "term": "consequence area",
+      "acronym": null,
+      "definition": "The area impacted as a result of an equipment failure using calculations defined in API RP 581 .",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.10",
+      "term": "consequence of failure",
+      "acronym": "COF",
+      "definition": "The outcome of a failure event used in relative ranking of equipment. COF can be determined for safety, environmental or financial events.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.11",
+      "term": "consequence methodology",
+      "acronym": null,
+      "definition": "The consequence modeling approach that is defined in API RP 581 .",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.12",
+      "term": "consequence modeling",
+      "acronym": null,
+      "definition": "Prediction of failure consequences based on a set of empirical equations, using release rate (for continuous releases) or mass (for instantaneous releases).",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.13",
+      "term": "continuous release",
+      "acronym": null,
+      "definition": "A release that occurs over a longer period of time. In consequence modeling, a continuous release is modeled as steady state plume.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.14",
+      "term": "corrosion allowance",
+      "acronym": null,
+      "definition": "The excess thickness available above the minimum required thickness (e.g. based initially on furnished thickness or measured thickness and is not necessarily the initial or nameplate corrosion allowance).",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.15",
+      "term": "critical point",
+      "acronym": null,
+      "definition": "The thermodynamic state in which liquid and gas phases of a substance coexist in equilibrium at the highest possible temperature. At higher temperatures than the critical, no liquid phase can exist.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.16",
+      "term": "damage mechanism",
+      "acronym": null,
+      "definition": "A process that induces deleterious micro and/or macro material changes over time that is harmful to the material condition or mechanical properties. Damage mechanisms are usually incremental, cumulative and, in some instances unrecoverable. Common damage mechanisms include corrosion, chemical attack, creep, erosion, fatigue, fracture and thermal aging.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.17",
+      "term": "damage factor",
+      "acronym": "DF",
+      "definition": "An adjustment factor applied to the generic failure frequency of a component to account for damage mechanisms that are active in a component.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.18",
+      "term": "deflagration",
+      "acronym": null,
+      "definition": "A release of energy caused by the propagation of a chemical reaction in which the reaction front advances into the unreacted substance at less than sonic velocity in the unreacted material. Where a blast wave is produced with the potential to cause damage, the term explosive deflagration may be used.",
+      "source_page": 6
+    },
+    {
+      "clause": "Part 1 §3.1.19",
+      "term": "dense gas",
+      "acronym": null,
+      "definition": "A gas with density exceeding that of air at ambient temperature .",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.20",
+      "term": "detonation",
+      "acronym": null,
+      "definition": "A release of energy caused by the extremely rapid chemical reaction of a substance in which the reaction front advances into the unreacted substance at greater than sonic velocity.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.21",
+      "term": "dispersion",
+      "acronym": null,
+      "definition": "When a vapor or volatile liquid is released to the environment, a vapor cloud is formed. The vapor cloud can be dispersed or scattered through the mixing of air, thermal action, gravity spreading, or other mixing methods until the concentration reaches a safe level or is ignited.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.22",
+      "term": "entrainment",
+      "acronym": null,
+      "definition": "The suspension of liquid as an aerosol in the atmospheric dispersion of a two-phase release or the aspiration of air into a jet discharge.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.23",
+      "term": "equipment",
+      "acronym": null,
+      "definition": "An individual item that is part of a system, equipment is comprised of an assemblage of Components . Examples include pressure vessels, PRDs, piping, boilers and heaters.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.24",
+      "term": "event",
+      "acronym": null,
+      "definition": "An incident or situation, which occurs in a particular place during a particular interval of time.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.25",
+      "term": "event tree",
+      "acronym": null,
+      "definition": "Model used to show how various individual event probabilities should be combined to calculate the probability for the chain of events that may lead to undesireable outcomes .",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.26",
+      "term": "failure",
+      "acronym": null,
+      "definition": "The loss of function of a system, structure, asset or component to perform its required or intended function(s). The main function of the systems, assets and components included in the scope of this document is considered to be containment of fluid. Therefore for pressure boundary components, failure is associated with a loss of containment due to operating conditions, discontinuities, damage, loss of material properties, or a combination of these parameters.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.27",
+      "term": "fireball",
+      "acronym": null,
+      "definition": "The atmospheric burning of a fuel-air cloud in which the energy is mostly emitted in the form of radiant heat. The inner core of the fuel release consists of almost pure fuel whereas the outer layer in which ignition first occurs is a flammable fuel-air mixture. As buoyancy forces of the hot gases begin to dominate, the burning cloud rises and becomes more spherical in shape.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.28",
+      "term": "fitness-for-service",
+      "acronym": "FFS",
+      "definition": "A methodology whereby damage or flaws/imperfections contained within a component or equipment item are assessed in order to determine acceptability for continued service.",
+      "source_page": 7
+    },
+    {
+      "clause": "Part 1 §3.1.29",
+      "term": "flammability range",
+      "acronym": null,
+      "definition": "Difference between upper and lower flammability limits.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.30",
+      "term": "flammable consequence",
+      "acronym": null,
+      "definition": "Result of the release of a flammable fluid in the environment.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.31",
+      "term": "flash fire",
+      "acronym": null,
+      "definition": "The combustion of a flammable vapor and air mixture in which flame passes through that mixture at less the sonic velocity, such that negligible damaging overpressure is generated.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.32",
+      "term": "flashpoint temperature",
+      "acronym": null,
+      "definition": "Temperature above which a material can vaporize to form a flammable mixture.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.33",
+      "term": "generic failure frequency",
+      "acronym": "GFF",
+      "definition": "A probability of failure developed for specific component types based on a large population of component data that does not include the effects of specific damage mechanisms. The population of component data may include data from all plants within a company or from various plants within an industry, from literature sources, past reports, and commercial data bases.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.34",
+      "term": "hazard and operability study",
+      "acronym": "HAZOP",
+      "definition": "A structured brainstorming exercise that utilizes a list of guide words to stimulate team discussions. The guidewords focus on process parameters such as flow, level, temperature, and pressure, and then branch out to include other concerns, such as human factors, and operating outside normal parameters.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.35",
+      "term": "hydraulic conductivity",
+      "acronym": null,
+      "definition": "Also referred to as the coefficient of permeability. This value is based on soil properties and indicates the ease with which water can move through the material. It has the same units as velocity.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.36",
+      "term": "inspection",
+      "acronym": null,
+      "definition": "A series of activities performed to evaluate the condition of the equipment or component.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.37",
+      "term": "inspection effectiveness",
+      "acronym": null,
+      "definition": "The ability of the inspection activity to reduce the uncertainty in the damage state of the equipment or component. Inspection effectiveness categories are used to reduce uncertainty in the models for calculating the probability of failure (see Annex 2.C).",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.38",
+      "term": "inspection plan",
+      "acronym": null,
+      "definition": "A documented set of actions detailing the scope, extent, methods and timing of the inspection activities for equipment to determine the current condition.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.39",
+      "term": "inspection program",
+      "acronym": null,
+      "definition": "A program that develops, maintains, monitors and manages a set of inspection, testing, and preventative maintenance activities to maintain the mechanical integrity of equipment.",
+      "source_page": 8
+    },
+    {
+      "clause": "Part 1 §3.1.40",
+      "term": "instantaneous release",
+      "acronym": null,
+      "definition": "A release that occurs so rapidly that the fluid disperses as a single large cloud or pool.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.41",
+      "term": "intrusive",
+      "acronym": null,
+      "definition": "Requires entry into the equipment.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.42",
+      "term": "inventory group",
+      "acronym": null,
+      "definition": "Inventory of attached equipment that can realistically contribute fluid mass to a leaking equipment item.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.43",
+      "term": "iso-risk",
+      "acronym": null,
+      "definition": "A line of constant risk and method of graphically showing POF and COF values in a log-log, two-dimensional plot where risk increases toward the upper right-hand corner. Components near an iso-risk line (or iso-line for risk) represent an equivalent level of risk while the contribution of POF and COF may vary significantly.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.44",
+      "term": "jet fire",
+      "acronym": null,
+      "definition": "Results when a high-momentum gas, liquid, or two-phase release is ignited.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.45",
+      "term": "loss of containment",
+      "acronym": null,
+      "definition": "Occurs when the pressure boundary is breached .",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.46",
+      "term": "management systems factor",
+      "acronym": null,
+      "definition": "An adjustment factor that accounts for the portions of the facility's management system that most directly impact the POF of a component. Adjusts the generic failure frequencies for differences in process safety management systems . The factor is derived from the results of an evaluation of a facility or operating unit's management systems that affect plant risk.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.47",
+      "term": "minimum thickness",
+      "acronym": null,
+      "definition": "The thickness without corrosion allowance for each component based on the appropriate design code calculations and code allowable stress that consider pressure, mechanical and structural loadings. Alternatively, minimum required thickness can be reassessed using Fitness-for-Service analysis in accordance with API 579- 1/ASME FFS-1.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.48",
+      "term": "mitigation systems",
+      "acronym": null,
+      "definition": "System designed to detect, isolate, and reduce the effects of a release of hazardous materials.",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.49",
+      "term": "neutrally buoyant gas",
+      "acronym": null,
+      "definition": "A gas with density approximately equal to that of air at ambient temperature .",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.50",
+      "term": "non-intrusive",
+      "acronym": null,
+      "definition": "Can be performed externally .",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.51",
+      "term": "owner-user",
+      "acronym": null,
+      "definition": "The party who owns the facility where the asset is operated. The owner is typically also the User. 10 API RECOMMENDED PRACTICE 581",
+      "source_page": 9
+    },
+    {
+      "clause": "Part 1 §3.1.52",
+      "term": "physical explosion",
+      "acronym": null,
+      "definition": "The catastrophic rupture of a pressurized gas-filled vessel.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.53",
+      "term": "plan date",
+      "acronym": null,
+      "definition": "Date set by the owner-user that defines the end of plan period.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.54",
+      "term": "plan period",
+      "acronym": null,
+      "definition": "Time period set by the owner-user that the equipment or component risk is calculated, criteria evaluated and the recommended inspection plan is valid.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.55",
+      "term": "pool fire",
+      "acronym": null,
+      "definition": "Caused when liquid pools of flammable materials ignite.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.56",
+      "term": "probability",
+      "acronym": null,
+      "definition": "Extent to which an event is likely to occur within the time frame under consideration. The mathematical definition of probability is a real number in the scale O to 1 attached to a random event. Probability can be related to a long-run relative frequency of occurrence or to a degree of belief that an event will occur. For a high degree of belief, the probability is near one. Frequency rather than probability may be used in describing risk. Degrees of belief about probability can be chosen as classes or ranks like; rare, unlikely, moderate , likely, almost certain, or incredible, improbable, remote, occasional, probable, frequent.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.57",
+      "term": "probability of failure",
+      "acronym": "POF",
+      "definition": "Likelihood of an equipment or component failure due to a single damage mechanism or multiple damage mechanisms occurring under specific operating conditions.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.58",
+      "term": "probit",
+      "acronym": null,
+      "definition": "The random variable with a mean of 5 and a variance of 1, which is used in various effect models.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.59",
+      "term": "process safety management",
+      "acronym": "PSM",
+      "definition": "A management system that is focused on prevention of, preparedness for, mitigation of, response to, and restoration from catastrophic releases of chemicals or energy from a process associated with a facility.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.60",
+      "term": "process unit",
+      "acronym": null,
+      "definition": "A group of systems arranged in a specific fashion to produce a product or service. Examples of processes include power generation, acid production, fuel oil production, and ethylene production.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.61",
+      "term": "RBI date",
+      "acronym": null,
+      "definition": "Date set by the owner-user that defines the start of a plan period.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.62",
+      "term": "risk",
+      "acronym": null,
+      "definition": "The combination of the probability of an event and its consequence . In some situations, risk is a deviation from the expected. Risk is defined as the product of probability and consequence when probability and consequence are expressed numerically.",
+      "source_page": 10
+    },
+    {
+      "clause": "Part 1 §3.1.63",
+      "term": "risk analysis",
+      "acronym": null,
+      "definition": "Systematic use of information to identify sources and to estimate the risk. Risk analysis provides a basis for risk evaluation, risk mitigation and risk acceptance. Information can include historical data, theoretical analysis, informed opinions and concerns of stakeholders.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.64",
+      "term": "risk-based inspection",
+      "acronym": "RBI",
+      "definition": "A risk assessment and management process that is focused on loss of containment of pressurized equipment in processing facilities, due to damage mechanisms. These risks are managed primarily through equipment inspection.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.65",
+      "term": "risk drive",
+      "acronym": null,
+      "definition": "An item affecting either the probability, consequence or both such that it constitutes a significant portion of the risk.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.66",
+      "term": "risk management",
+      "acronym": null,
+      "definition": "Coordinated activities to direct and control an organization with regard to risk. Risk management typically includes risk assessment, risk mitigation, risk acceptance and risk communication.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.67",
+      "term": "risk mitigation",
+      "acronym": null,
+      "definition": "Process of selection and implementation of measures to modify risk. The term risk mitigation is sometimes used for measures themselves.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.68",
+      "term": "risk target",
+      "acronym": null,
+      "definition": "Level of acceptable risk defined for inspection planning purposes.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.69",
+      "term": "safe dispersion",
+      "acronym": null,
+      "definition": "Occurs when a non-toxic, flammable fluid is released and then disperses without ignition.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.70",
+      "term": "side-on pressure",
+      "acronym": null,
+      "definition": "The pressure that would be recorded on the side of a structure parallel to the blast.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.71",
+      "term": "SLAB",
+      "acronym": null,
+      "definition": "A model for denser-than-air gaseous plume releases that utilizes the one-dimensional equations of momentum, conservation of mass and energy, and the equation of state. SLAB handles point source ground-level releases, elevated jet releases, releases from volume sources and releases from the evaporation of volatile liquid spill pools.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.72",
+      "term": "soil porosity",
+      "acronym": null,
+      "definition": "The percentage of an entire volume of soil that is either vapor or liquid phase (i.e. air, water, etc.). Clays typically have higher values due to their ability to hold water and air in its structure.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.73",
+      "term": "source model or term",
+      "acronym": null,
+      "definition": "A model used to determine the rate of discharge, the total quantity released (or total time) of a discharge of material from a process, and the physical state of the discharged material.",
+      "source_page": 11
+    },
+    {
+      "clause": "Part 1 §3.1.74",
+      "term": "system",
+      "acronym": null,
+      "definition": "A collection of equipment assembled for a specific function within a process unit. Examples of systems include service water system, distillation systems and separation systems.",
+      "source_page": 12
+    },
+    {
+      "clause": "Part 1 §3.1.75",
+      "term": "target date",
+      "acronym": null,
+      "definition": "Date where the risk target is expected to be reached and is the date at or before the recommended inspection should be performed.",
+      "source_page": 12
+    },
+    {
+      "clause": "Part 1 §3.1.76",
+      "term": "TNO multi-energy model",
+      "acronym": null,
+      "definition": "A blast model based on the theory that the energy of explosion is highly dependent on the level of congestion and less dependent on the fuel in the cloud.",
+      "source_page": 12
+    },
+    {
+      "clause": "Part 1 §3.1.77",
+      "term": "TNT equivalency model",
+      "acronym": null,
+      "definition": "An explosion model based on the explosion of a thermodynamically equivalent mass of TNT.",
+      "source_page": 12
+    },
+    {
+      "clause": "Part 1 §3.1.78",
+      "term": "transmissivity",
+      "acronym": null,
+      "definition": "The fraction of radiant energy that is transmitted from the radiating object through the atmosphere to a target, the transmissivity is reduced due to the absorption and scattering of energy by the atmosphere itself.",
+      "source_page": 12
+    },
+    {
+      "clause": "Part 1 §3.1.79",
+      "term": "toxic chemical",
+      "acronym": null,
+      "definition": "Any chemical that presents a physical or health hazard or an environmental hazard according to the appropriate Material Safety Data Sheet. These chemicals (when ingested, inhaled or absorbed through the skin) can cause damage to living tissue, impairment of the central nervous system, severe illness, or in extreme cases, death. These chemicals may also result in adverse effects to the environment (measured as ecotoxicity and related to persistence and bioaccumulation potential).",
+      "source_page": 12
+    },
+    {
+      "clause": "Part 1 §3.1.80",
+      "term": "vapor cloud explosion",
+      "acronym": null,
+      "definition": "When a flammable vapor is released, its mixture with air will form a flammable vapor cloud. If ignited, the flame speed may accelerate to high velocities and produce significant blast overpressure . 3.2 ACFM ACSCC AEGL AIHA AIT API ASME AST ASTM AU AUST Acronyms Alternating Current Field Measurement Alkaline Carbonate Stress Corrosion Cracking Acute Exposure Guideline Levels American Industrial Hygene Association Auto-Ignition Temperature American Petroleum Institute American Society of Mechanical Engineers Atmospheric Storage Tank American Society for Testing and Materials Additional Uncertainty Automated Ultrasonic Backscatter Technique",
+      "source_page": 12
+    }
+  ],
+  "acronyms": [
+    {
+      "acronym": "AWWA",
+      "expansion": "American Water Works Association",
+      "source_page": 25
+    },
+    {
+      "acronym": "BLEVE",
+      "expansion": "Boiling Liquid Expanding Vapor Explosion",
+      "source_page": 25
+    },
+    {
+      "acronym": "BOD",
+      "expansion": "Biological Oxygen Demand",
+      "source_page": 25
+    },
+    {
+      "acronym": "CA",
+      "expansion": "Corrosion Allowance",
+      "source_page": 25
+    },
+    {
+      "acronym": "CCPS",
+      "expansion": "Center for Chemical Process Safety",
+      "source_page": 25
+    },
+    {
+      "acronym": "CCR",
+      "expansion": "Continuous Catalytic Reformer",
+      "source_page": 25
+    },
+    {
+      "acronym": "CFR",
+      "expansion": "Code of Federal Regulations",
+      "source_page": 25
+    },
+    {
+      "acronym": "CLSCC",
+      "expansion": "Chloride Stress Corrosion Cracking",
+      "source_page": 25
+    },
+    {
+      "acronym": "CML",
+      "expansion": "Condition Monitoring Location",
+      "source_page": 25
+    },
+    {
+      "acronym": "COF",
+      "expansion": "Consequence of Failure",
+      "source_page": 25
+    },
+    {
+      "acronym": "CP",
+      "expansion": "Cathodic Protection",
+      "source_page": 25
+    },
+    {
+      "acronym": "CUI",
+      "expansion": "Corrosion Under Insulation",
+      "source_page": 25
+    },
+    {
+      "acronym": "CUICLSCC",
+      "expansion": "External Chloride Stress Corrosion Cracking Under Insulation",
+      "source_page": 25
+    },
+    {
+      "acronym": "cw",
+      "expansion": "Cooling Water",
+      "source_page": 25
+    },
+    {
+      "acronym": "DCVG",
+      "expansion": "Direct Current Voltage Gradient",
+      "source_page": 25
+    },
+    {
+      "acronym": "DEA",
+      "expansion": "Diethanolamine",
+      "source_page": 25
+    },
+    {
+      "acronym": "DELGADIS",
+      "expansion": "Dense Gas Dispersion",
+      "source_page": 25
+    },
+    {
+      "acronym": "OF",
+      "expansion": "Damage Factor",
+      "source_page": 25
+    },
+    {
+      "acronym": "DGA",
+      "expansion": "Diglycolamine",
+      "source_page": 25
+    },
+    {
+      "acronym": "DIPA",
+      "expansion": "Disopropanolamine",
+      "source_page": 25
+    },
+    {
+      "acronym": "DIPPR",
+      "expansion": "Design Institute of Physical Properties",
+      "source_page": 25
+    },
+    {
+      "acronym": "DO",
+      "expansion": "Dissolved Oxygen",
+      "source_page": 25
+    },
+    {
+      "acronym": "DPO",
+      "expansion": "Device Partially Open",
+      "source_page": 25
+    },
+    {
+      "acronym": "DSO",
+      "expansion": "Device Stuck Open",
+      "source_page": 25
+    },
+    {
+      "acronym": "EPA",
+      "expansion": "Environmental Protection Agency",
+      "source_page": 25
+    },
+    {
+      "acronym": "ERPG",
+      "expansion": "Emergency Response Planning Guidelines",
+      "source_page": 25
+    },
+    {
+      "acronym": "EVA",
+      "expansion": "Extreme Value Analysis",
+      "source_page": 25
+    },
+    {
+      "acronym": "External CLSCC",
+      "expansion": "External Chloride Stress Corrosion Cracking",
+      "source_page": 25
+    },
+    {
+      "acronym": "FCC",
+      "expansion": "Fluid Catalytic Cracking",
+      "source_page": 25
+    },
+    {
+      "acronym": "FCCU",
+      "expansion": "Fluid Catalytic Cracking Unit",
+      "source_page": 25
+    },
+    {
+      "acronym": "FFS",
+      "expansion": "Fitness-For-Service",
+      "source_page": 25
+    },
+    {
+      "acronym": "FRP",
+      "expansion": "Fiberglass Reinforced Plastic",
+      "source_page": 25
+    },
+    {
+      "acronym": "FTO",
+      "expansion": "Fail to Open",
+      "source_page": 25
+    },
+    {
+      "acronym": "GFF",
+      "expansion": "Generic Failure Frequency",
+      "source_page": 25
+    },
+    {
+      "acronym": "GOR",
+      "expansion": "Gas Oil Ratio",
+      "source_page": 25
+    },
+    {
+      "acronym": "HAZ",
+      "expansion": "Heat Affected Zone",
+      "source_page": 25
+    },
+    {
+      "acronym": "HEM",
+      "expansion": "Homogeneous Equilibrium Method",
+      "source_page": 25
+    },
+    {
+      "acronym": "HF",
+      "expansion": "Anhydrous Hydrofluoric Acid",
+      "source_page": 25
+    },
+    {
+      "acronym": "HIC",
+      "expansion": "Hydrogen Induced Cracking",
+      "source_page": 26
+    },
+    {
+      "acronym": "HGO",
+      "expansion": "Heavy Gas Oil",
+      "source_page": 26
+    },
+    {
+      "acronym": "HSC",
+      "expansion": "Hydrogen Stress Corrosion Cracking",
+      "source_page": 26
+    },
+    {
+      "acronym": "HSRG",
+      "expansion": "Heat Recovery Steam Generator",
+      "source_page": 26
+    },
+    {
+      "acronym": "HT",
+      "expansion": "High Temperature",
+      "source_page": 26
+    },
+    {
+      "acronym": "HTHA",
+      "expansion": "High Temperature Hydrogen Attack",
+      "source_page": 26
+    },
+    {
+      "acronym": "IDLH",
+      "expansion": "Immediately Dangerous to Life or Health",
+      "source_page": 26
+    },
+    {
+      "acronym": "ID",
+      "expansion": "Inside Diameter",
+      "source_page": 26
+    },
+    {
+      "acronym": "KO",
+      "expansion": "Knock Out",
+      "source_page": 26
+    },
+    {
+      "acronym": "LBC",
+      "expansion": "Lower Bound Confidence",
+      "source_page": 26
+    },
+    {
+      "acronym": "LFL",
+      "expansion": "Lower Flammability Limit",
+      "source_page": 26
+    },
+    {
+      "acronym": "LolE",
+      "expansion": "Level of Inspection Effectiveness",
+      "source_page": 26
+    },
+    {
+      "acronym": "LOPA",
+      "expansion": "Layer of Protection Analysis",
+      "source_page": 26
+    },
+    {
+      "acronym": "LPD",
+      "expansion": "Leakage Past Device",
+      "source_page": 26
+    },
+    {
+      "acronym": "LPG",
+      "expansion": "Liquiefied Petroleum Gas",
+      "source_page": 26
+    },
+    {
+      "acronym": "LSI",
+      "expansion": "Langelier Saturation Index",
+      "source_page": 26
+    },
+    {
+      "acronym": "LV",
+      "expansion": "Liquid Volume",
+      "source_page": 26
+    },
+    {
+      "acronym": "MAWP",
+      "expansion": "Maximum Allowable Working Pressure",
+      "source_page": 26
+    },
+    {
+      "acronym": "MDEA",
+      "expansion": "Methyldiethanolamine",
+      "source_page": 26
+    },
+    {
+      "acronym": "MDMT",
+      "expansion": "Minimum Design Metal Temperature",
+      "source_page": 26
+    },
+    {
+      "acronym": "MEA",
+      "expansion": "Monoethanolamine",
+      "source_page": 26
+    },
+    {
+      "acronym": "MEM",
+      "expansion": "Multi Energy Method",
+      "source_page": 26
+    },
+    {
+      "acronym": "MFL",
+      "expansion": "Magnetic Flux Leakage",
+      "source_page": 26
+    },
+    {
+      "acronym": "MIC",
+      "expansion": "Microbiologially Induced Corrosion",
+      "source_page": 26
+    },
+    {
+      "acronym": "MSDS",
+      "expansion": "Material Safety Data Sheets",
+      "source_page": 26
+    },
+    {
+      "acronym": "MTBE",
+      "expansion": "Methyl Tertiary Butyl Ether",
+      "source_page": 26
+    },
+    {
+      "acronym": "MTTF",
+      "expansion": "Mean Time To Failure",
+      "source_page": 26
+    },
+    {
+      "acronym": "MTR",
+      "expansion": "Material Test Report",
+      "source_page": 26
+    },
+    {
+      "acronym": "MW",
+      "expansion": "Molecular Weight",
+      "source_page": 26
+    },
+    {
+      "acronym": "NACE",
+      "expansion": "National Association of Corrosion Engineers",
+      "source_page": 26
+    },
+    {
+      "acronym": "NBP",
+      "expansion": "Normal Boiling Point",
+      "source_page": 26
+    },
+    {
+      "acronym": "NOE",
+      "expansion": "Non-Destructive Examination",
+      "source_page": 26
+    },
+    {
+      "acronym": "NFPA",
+      "expansion": "National Fire Protection Association",
+      "source_page": 26
+    },
+    {
+      "acronym": "NIOSH",
+      "expansion": "National Institute of Occupational Safety and Health",
+      "source_page": 26
+    },
+    {
+      "acronym": "OASP",
+      "expansion": "Opens Above Set Pressure",
+      "source_page": 26
+    },
+    {
+      "acronym": "OD",
+      "expansion": "Outside Diameter",
+      "source_page": 26
+    },
+    {
+      "acronym": "OSHA",
+      "expansion": "Occupational Safety and Health Administration",
+      "source_page": 26
+    },
+    {
+      "acronym": "PASCC",
+      "expansion": "Polythionic Acid Stress Corrosion Cracking",
+      "source_page": 26
+    },
+    {
+      "acronym": "PE",
+      "expansion": "Polyethelene",
+      "source_page": 27
+    },
+    {
+      "acronym": "PHAST",
+      "expansion": "Process Hazard Analysis Software Tools",
+      "source_page": 27
+    },
+    {
+      "acronym": "PM",
+      "expansion": "Preventative Maintenance",
+      "source_page": 27
+    },
+    {
+      "acronym": "P&ID",
+      "expansion": "Piping and Instrumentation Diagrams",
+      "source_page": 27
+    },
+    {
+      "acronym": "PHA",
+      "expansion": "Process Hazard Analysis",
+      "source_page": 27
+    },
+    {
+      "acronym": "PN",
+      "expansion": "PressureNacuum Vents",
+      "source_page": 27
+    },
+    {
+      "acronym": "POF",
+      "expansion": "Probability of Failure",
+      "source_page": 27
+    },
+    {
+      "acronym": "POFOD",
+      "expansion": "Probability of Failure On Demand",
+      "source_page": 27
+    },
+    {
+      "acronym": "POL",
+      "expansion": "Probability of Leak",
+      "source_page": 27
+    },
+    {
+      "acronym": "pp",
+      "expansion": "Polypropelene",
+      "source_page": 27
+    },
+    {
+      "acronym": "PRD",
+      "expansion": "Pressure Relief Device",
+      "source_page": 27
+    },
+    {
+      "acronym": "PRV",
+      "expansion": "Pressure Relief Valve",
+      "source_page": 27
+    },
+    {
+      "acronym": "PSM",
+      "expansion": "Process Safety Management",
+      "source_page": 27
+    },
+    {
+      "acronym": "PT",
+      "expansion": "Penetrant Testing",
+      "source_page": 27
+    },
+    {
+      "acronym": "PVC",
+      "expansion": "Polyvinyl Chloride",
+      "source_page": 27
+    },
+    {
+      "acronym": "PWHT",
+      "expansion": "Post Weld Heat Treatment",
+      "source_page": 27
+    },
+    {
+      "acronym": "REMS",
+      "expansion": "Rare Earth Elements",
+      "source_page": 27
+    },
+    {
+      "acronym": "RBI",
+      "expansion": "Risk-Based Inspection",
+      "source_page": 27
+    },
+    {
+      "acronym": "RH",
+      "expansion": "Relative Humidity",
+      "source_page": 27
+    },
+    {
+      "acronym": "RMP",
+      "expansion": "Risk Management Plan",
+      "source_page": 27
+    },
+    {
+      "acronym": "RPS",
+      "expansion": "Release Prevention Barrier",
+      "source_page": 27
+    },
+    {
+      "acronym": "RP",
+      "expansion": "Recommeded Practice",
+      "source_page": 27
+    },
+    {
+      "acronym": "RSI",
+      "expansion": "Ryzner Stability Index",
+      "source_page": 27
+    },
+    {
+      "acronym": "RT",
+      "expansion": "Radiographic Testing",
+      "source_page": 27
+    },
+    {
+      "acronym": "sec",
+      "expansion": "Stress Corrosion Cracking",
+      "source_page": 27
+    },
+    {
+      "acronym": "SCE",
+      "expansion": "Step Cooling Embrittlement",
+      "source_page": 27
+    },
+    {
+      "acronym": "SFPE",
+      "expansion": "Society of Fire Protection Engineers",
+      "source_page": 27
+    },
+    {
+      "acronym": "SOHIC",
+      "expansion": "Stress Oriented Hydrogen Induced Cracking",
+      "source_page": 27
+    },
+    {
+      "acronym": "SOP",
+      "expansion": "Standard Operating Procedure",
+      "source_page": 27
+    },
+    {
+      "acronym": "SPO",
+      "expansion": "Spurious/Premature Opening",
+      "source_page": 27
+    },
+    {
+      "acronym": "SRB",
+      "expansion": "Sulfate Reducing Bacteria",
+      "source_page": 27
+    },
+    {
+      "acronym": "ss",
+      "expansion": "Stainless Steel",
+      "source_page": 27
+    },
+    {
+      "acronym": "SSC",
+      "expansion": "Sulfide Stress Cracking",
+      "source_page": 27
+    },
+    {
+      "acronym": "TAME",
+      "expansion": "Tertiary Amyl Methyl Ether",
+      "source_page": 27
+    },
+    {
+      "acronym": "TAN",
+      "expansion": "Total Acid Number",
+      "source_page": 27
+    },
+    {
+      "acronym": "TDS",
+      "expansion": "Total Dissolved Solids",
+      "source_page": 27
+    },
+    {
+      "acronym": "TEEL",
+      "expansion": "Temporary Emergency Exposure Limits",
+      "source_page": 27
+    },
+    {
+      "acronym": "TEMA",
+      "expansion": "Tubular Exchanger Manufacturers Association",
+      "source_page": 27
+    },
+    {
+      "acronym": "TKS",
+      "expansion": "Total Key Species",
+      "source_page": 16
+    },
+    {
+      "acronym": "TNO",
+      "expansion": "The Netherlands Organization for Applied Scientific Research",
+      "source_page": 16
+    },
+    {
+      "acronym": "TNT",
+      "expansion": "Tri-Nitro Toluene",
+      "source_page": 16
+    },
+    {
+      "acronym": "TOFD",
+      "expansion": "Time of Flight Diffraction",
+      "source_page": 16
+    },
+    {
+      "acronym": "UFL",
+      "expansion": "Upper Flammability Limit",
+      "source_page": 16
+    },
+    {
+      "acronym": "UNS",
+      "expansion": "Unified Numbering System",
+      "source_page": 16
+    },
+    {
+      "acronym": "UT",
+      "expansion": "Ultrasonic Testing",
+      "source_page": 16
+    },
+    {
+      "acronym": "VCE",
+      "expansion": "Vapor Cloud Explosion",
+      "source_page": 16
+    },
+    {
+      "acronym": "VT",
+      "expansion": "Visual Testing",
+      "source_page": 16
+    },
+    {
+      "acronym": "WFMT",
+      "expansion": "Wet Fluorescent Magnetic (particle) Testing",
+      "source_page": 16
+    },
+    {
+      "acronym": "D",
+      "expansion": "1 (t) , and a management systems factor, F MS .",
+      "source_page": 16
+    }
+  ]
+}
